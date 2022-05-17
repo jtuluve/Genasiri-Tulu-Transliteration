@@ -70,7 +70,7 @@ txt = txt.replace("ಅ", "AA").replace("ಆ", "Aa").replace("ಇ", "Ai").replace
 
 
 
-
+fo = open("../home/index.html", "w")
 fo.write("Content-type:text/html\r\n\r\n")
 fo.write("<html>")
 fo.write("<head>")
