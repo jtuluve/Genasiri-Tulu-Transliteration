@@ -1,4 +1,11 @@
-txt = input("type:")
+#idk if it is correct way to take input. Converting code from line 10.
+import cgi
+
+form = cgi.FieldStorage()
+
+
+
+txt = form.getvalue('convert')
 
 e = txt.find("ೆ")
 while e > -1:
@@ -53,4 +60,20 @@ while G > -1 :
   G = txt.find("ೋ")
 
 
-print(txt.replace("ಅ", "AA").replace("ಆ", "Aa").replace("ಇ", "Ai").replace("ಈ", "AI").replace("ಉ", "Au").replace("ಊ", "AU").replace("ಋ", "AR").replace("ೠ", "ARR").replace("ಎ", "eA").replace("ಏ", "EA").replace("ಐ", "eeA").replace("ಒ", "eAa").replace("ಓ", "FAa").replace("ಔ", "AY").replace("ಂ", "M").replace("ಃ", "H").replace("ಕ", "k").replace("ಖ", "K").replace("ಗ", "g").replace("ಘ", "G").replace("ಙ", "Z").replace("ಚ", "c").replace("ಛ", "C").replace("ಜ", "j").replace("ಝ", "J").replace("ಞ", "z").replace("ಟ", "q").replace("ಠ", "Q").replace("ಡ", "w").replace("ಢ", "W").replace("ಣ", "N").replace("ತ", "t").replace("ಥ", "T").replace("ದ", "d").replace("ಧ", "D").replace("ನ", "n").replace("ಪ", "p").replace("ಫ", "P").replace("ಬ", "b").replace("ಭ", "B").replace("ಮ", "m").replace("ಯ", "y").replace("ರ", "r").replace("ಲ", "l").replace("ವ", "v").replace("ಶ", "S").replace("ಷ", "x").replace("ಸ", "s").replace("ಹ", "h").replace("ಳ", "L").replace("್", "A").replace("ಾ", "a").replace("ು", "u").replace("ೂ", "U").replace("ೌ", "Y").replace("ಿ", "i").replace("ೀ", "I").replace("ೃ", "R").replace("‍", "X").replace("‌", "X"))
+txt = txt.replace("ಅ", "AA").replace("ಆ", "Aa").replace("ಇ", "Ai").replace("ಈ", "AI").replace("ಉ", "Au").replace("ಊ", "AU").replace("ಋ", "AR").replace("ೠ", "ARR").replace("ಎ", "eA").replace("ಏ", "EA").replace("ಐ", "eeA").replace("ಒ", "eAa").replace("ಓ", "FAa").replace("ಔ", "AY").replace("ಂ", "M").replace("ಃ", "H").replace("ಕ", "k").replace("ಖ", "K").replace("ಗ", "g").replace("ಘ", "G").replace("ಙ", "Z").replace("ಚ", "c").replace("ಛ", "C").replace("ಜ", "j").replace("ಝ", "J").replace("ಞ", "z").replace("ಟ", "q").replace("ಠ", "Q").replace("ಡ", "w").replace("ಢ", "W").replace("ಣ", "N").replace("ತ", "t").replace("ಥ", "T").replace("ದ", "d").replace("ಧ", "D").replace("ನ", "n").replace("ಪ", "p").replace("ಫ", "P").replace("ಬ", "b").replace("ಭ", "B").replace("ಮ", "m").replace("ಯ", "y").replace("ರ", "r").replace("ಲ", "l").replace("ವ", "v").replace("ಶ", "S").replace("ಷ", "x").replace("ಸ", "s").replace("ಹ", "h").replace("ಳ", "L").replace("್", "A").replace("ಾ", "a").replace("ು", "u").replace("ೂ", "U").replace("ೌ", "Y").replace("ಿ", "i").replace("ೀ", "I").replace("ೃ", "R").replace("‍", "X").replace("‌", "X")
+
+
+
+
+fo.write("Content-type:text/html\r\n\r\n")
+fo.write("<html>")
+fo.write("<head>")
+fo.write("<title>Hello - Second CGI Program</title>")
+fo.write("</head>")
+fo.write("<body>")
+fo.write("<h2>converted text: {}</h2>".format("txt"))
+
+fo.write("</body>")
+fo.write("</html>")
+
+fo.close()
