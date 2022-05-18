@@ -3,13 +3,13 @@ let txt = document.getElementById("txt").innerHTML;
 let e = txt.indexOf("ೆ");
 while (e > -1) {
  if (txt[e-4] === "್" && txt[e-2] === "್") {
-  txt = txt.slice(0, e - 5) + "e" + txt.slice(e - 5, e) + txt.slice(e + 1);
+  let txt = txt.slice(0, e - 5) + "e" + txt.slice(e - 5, e) + txt.slice(e + 1);
   let e = txt.indexOf("ೆ");
 } else if (txt[e - 2] === "್") {
-  txt = txt.slice(0, e - 3) + "e" + txt.slice(e - 3, e) + txt.slice(e + 1);
+  let txt = txt.slice(0, e - 3) + "e" + txt.slice(e - 3, e) + txt.slice(e + 1);
   let e = txt.indexOf("ೆ");
 } else {
-  txt = txt.slice(0, e - 1) + "e" + txt[e - 1] + txt.slice(e + 1);
+  let txt = txt.slice(0, e - 1) + "e" + txt[e - 1] + txt.slice(e + 1);
   let e = txt.indexOf("ೆ");
  }
 }
