@@ -12,8 +12,8 @@ e = txt.indexOf("\u0cc6");
 } else {
 txt = txt.slice(0, e - 1) + "e" + txt[e - 1] + txt.slice(e + 1);
 e = txt.indexOf("\u0cc6");
+  }
 }
-
 E = txt.indexOf("\u0cc7");
 
 while (E > -1) {
@@ -26,8 +26,8 @@ E = txt.indexOf("\u0cc7");
 } else {
 txt = txt.slice(0, E - 1) + "E" + txt[E - 1] + txt.slice(E + 1);
 E = txt.indexOf("\u0cc7");
+  }
 }
-
 g = txt.indexOf("\u0cca");
 
 while (g > -1) {
@@ -40,8 +40,8 @@ g = txt.indexOf("\u0cca");
 } else {
 txt = txt.slice(0, g - 1) + "e" + txt.slice(g - 1, g) + "a" + txt.slice(g + 1);
 g = txt.indexOf("\u0cca");
+  }
 }
-
 G = txt.indexOf("\u0ccb");
 
 while (G > -1) {
@@ -54,8 +54,8 @@ G = txt.indexOf("\u0ccb");
 } else {
 txt = txt.slice(0, G - 1) + "F" + txt.slice(G - 1, G) + "a" + txt.slice(G + 1);
 G = txt.indexOf("\u0ccb");
+  }
 }
-
 H = txt.indexOf("\u0cb0\u0ccd");
 
 while (H > -1 && txt[H + 1] !== " " && txt[H + 1] !== "\u200d" && txt[H + 1] !== "\u200c") {
