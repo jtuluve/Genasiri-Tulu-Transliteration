@@ -89,13 +89,13 @@ f = txt.indexOf("ೈ");
 let F = txt.indexOf("ೖ"); 
 while (F > -1) { 
 if (txt[F - 4] === "್" && txt[F - 2] === "್") { 
-txt = txt.slice(0, F - 5) + "e" + txt.slice(F - 5, F) + txt.slice(F + 1);
+txt = txt.slice(0, F - 6) + "e" + txt.slice(F - 6, F) + txt.slice(F + 1);
 F = txt.indexOf("ೖ"); 
 } else { 
 if (txt[F - 2] === "್") { 
-txt = txt.slice(0, F - 3) + "e" + txt.slice(F - 3, F) + txt.slice(F + 1); 
+txt = txt.slice(0, F - 4) + "e" + txt.slice(F - 4, F) + txt.slice(F + 1); 
 F = txt.indexOf("ೖ"); } else { 
-txt = txt.slice(0, F - 1) + "e" + txt[F - 1] + txt.slice(F + 1); 
+txt = txt.slice(0, F - 2) + "e" + txt[F - 2] + txt.slice(F + 1); 
 F = txt.indexOf("ೖ"); 
   }
  } 
