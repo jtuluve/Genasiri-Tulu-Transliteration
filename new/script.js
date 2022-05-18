@@ -28,4 +28,4 @@ function myFunction() {
   return rep;
 }
 
-document.getElementById("demo").innerHTML = myFunction();
+document.getElementById("resu").innerHTML = myFunction();
