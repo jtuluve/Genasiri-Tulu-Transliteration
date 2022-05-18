@@ -77,7 +77,7 @@ let H = txt.indexOf("ರ್");
 let ln = txt.length;
 
 
-while (H > -1 && txt[H + 1] !== " " && txt[H + 1] !== "‍" && txt[H + 1] !== "‌" && txt[H - 1] !== "್" && txt[ln-1] !== txt[H]){
+while (H > -1 && txt[H + 1] !== " " && txt[H + 1] !== "‍" && txt[H + 1] !== "‌" && txt[H - 1] !== "್" && ln-1 !== H){
 txt = txt.slice(0, H) + txt[H + 2] + "f" + txt.slice(H + 3);
 H = txt.indexOf("ರ್");
 }
