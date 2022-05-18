@@ -1,4 +1,5 @@
 pip install virtualenv //Linux
+
 Sudo apt-get install virtualenv //windows
 
 virtualenv venv
