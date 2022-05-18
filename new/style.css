@@ -1,16 +1,16 @@
 .txt{
 width: 40%;
 display: inline;
-color: #fbc800;
+background-color: #fbc800;
 }
 
 .btn{
 width: 40%;
 display: inline;
-color: #ef2648;
+background-color: #ef2648;
 }
 
 .resu{
 display: block;
-color: #fbc800;
+background-color: #fbc800;
 }
