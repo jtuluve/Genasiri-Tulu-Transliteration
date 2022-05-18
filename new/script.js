@@ -8,8 +8,8 @@ let txt = document.getElementById("txt").value;
 
 
 function spfunc(){
-var sp = document.getElementById("spcl");
-if ( sp.checked == true){
+let sp = document.getElementById("spcl");
+if (sp.checked == true){
 
 let j = txt.indexOf("ೆV"); 
 while (j > -1) { 
