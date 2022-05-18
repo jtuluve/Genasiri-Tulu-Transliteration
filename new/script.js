@@ -1,3 +1,6 @@
+document.getElementById("btn").addEventListener("click", myfunc);
+
+
 function myfunc(){
 let txt = document.getElementById("txt").value; 
 let e = txt.indexOf("ೆ"); 
