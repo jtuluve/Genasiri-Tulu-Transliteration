@@ -1,4 +1,5 @@
 .txt{
+color: black;
 width: 46%;
 height: 200px;
 display: inline;
@@ -9,6 +10,7 @@ text-align: top;
 }
 
 .resu{
+color: black;
 width: 46%;
 height: 200px;
 display: inline;
