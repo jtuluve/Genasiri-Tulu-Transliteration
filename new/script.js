@@ -32,7 +32,7 @@ while (E > -1) {
 
 
 
-g = txt.indexOf("ೊ");
+let g = txt.indexOf("ೊ");
 
 while (g > -1) {
 if (txt[g - 4] === "್" && txt[g - 2] === "್") {
@@ -49,7 +49,7 @@ g = txt.indexOf("ೊ");
 }
 }
 
-G = txt.indexOf("ೋ");
+let G = txt.indexOf("ೋ");
 
 while (G > -1) {
 if (txt[G - 4] === "್" && txt[G - 2] === "್") {
