@@ -2,16 +2,18 @@
 width: 40%;
 display: inline;
 background-color: #fbc800;
+left: 0;
 }
 
 .btn{
 width: 20%;
-display: inline;
+display: block;
 background-color: #ef2648;
 }
 
 .resu{
 width: 40%;
-display: block;
+display: inline;
 background-color: #fbc800;
+left:0;
 }
