@@ -5,12 +5,13 @@ background-color: #fbc800;
 }
 
 .btn{
-width: 40%;
+width: 20%;
 display: inline;
 background-color: #ef2648;
 }
 
 .resu{
+width: 40%;
 display: block;
 background-color: #fbc800;
 }
