@@ -71,13 +71,27 @@ G = txt.indexOf("ೋ");
 }
 
 
+let f = txt.indexOf("ೖ"); 
+while (f > -1) { 
+if (txt[f - 4] === "್" && txt[f - 2] === "್") { 
+txt = txt.slice(0, f - 5) + "ee" + txt.slice(f - 5, f) + txt.slice(f + 1);
+f = txt.indexOf("ೖ"); 
+} else { 
+if (txt[f - 2] === "್") { 
+txt = txt.slice(0, f - 3) + "ee" + txt.slice(f - 3, f) + txt.slice(f + 1); 
+f = txt.indexOf("ೖ"); } else { 
+txt = txt.slice(0, f - 1) + "ee" + txt[f - 1] + txt.slice(f + 1); 
+f = txt.indexOf("ೖ"); 
+  }
+ } 
+} 
+
 
 
 let H = txt.indexOf("ರ್");
-let ln = txt.length;
 
 
-while (H > -1 && txt[H + 2] !== " " && txt[H + 2] !== "‍" && txt[H + 2] !== "‌" && txt[H - 1] !== "್" && ln-2 !== H){
+while (H > -1 && txt[H + 2] !== " " && txt[H + 2] !== "‍" && txt[H + 2] !== "‌" && txt[H - 1] !== "್" && txt[H + 2] !== ""){
 txt = txt.slice(0, H) + txt[H + 2] + "f" + txt.slice(H + 3);
 H = txt.indexOf("ರ್");
 }
