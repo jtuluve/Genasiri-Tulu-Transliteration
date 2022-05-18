@@ -24,8 +24,6 @@ let rep = txt.replace(/ಅ/g, "AA").replace(/ಆ/g, "Aa").replace(/ಇ/g, "Ai").
 
 
 
-function myFunction() {
-  return rep;
-}
 
-document.getElementById("resu").innerHTML = myFunction();
+
+document.getElementById("resu").innerHTML = rep;
