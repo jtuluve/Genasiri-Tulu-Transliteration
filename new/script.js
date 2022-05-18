@@ -26,7 +26,7 @@ j = txt.indexOf("ೆV");
 } 
 } 
 
-txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA")
+txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
 
 }
 
