@@ -1,8 +1,36 @@
+
+
 document.getElementById("btn").addEventListener("click", myfunc);
 
 
 function myfunc(){
 let txt = document.getElementById("txt").value; 
+
+
+function spfunc(){
+var sp = document.getElementById("spcl");
+if ( sp.checked == true){
+
+let j = txt.indexOf("ೆV"); 
+while (j > -1) { 
+if (txt[j - 4] === "್" && txt[j - 2] === "್") { 
+txt = txt.slice(0, j - 5) + "o" + txt.slice(j - 5, j) + txt.slice(j + 2);
+j = txt.indexOf("ೆV"); 
+} else { 
+if (txt[j - 2] === "್") { 
+txt = txt.slice(0, j - 3) + "o" + txt.slice(j - 3, j) + txt.slice(j + 2); 
+j= txt.indexOf("ೆV"); 
+} else { 
+txt = txt.slice(0, j - 1) + "o" + txt[j - 1] + txt.slice(j + 2); 
+j = txt.indexOf("ೆV"); 
+}
+} 
+} 
+
+txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA")
+
+}
+}
 let e = txt.indexOf("ೆ"); 
 while (e > -1) { 
 if (txt[e - 4] === "್" && txt[e - 2] === "್") { 
