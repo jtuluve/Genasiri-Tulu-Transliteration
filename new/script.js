@@ -1,3 +1,3 @@
 let text = document.getElementById("txt").innerHTML; 
-let rep = text.replace(/\u0c95/g, "k");
+let rep = text.replace(/ಕ/g, "k");
 document.getElementById("txt").innerHTML = rep;
