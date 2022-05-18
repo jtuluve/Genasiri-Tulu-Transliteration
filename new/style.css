@@ -3,7 +3,7 @@ width: 40%;
 display: inline;
 background-color: #fbc800;
 left: 0;
-margin: 0;
+margin: -20;
 }
 
 .btn{
@@ -17,5 +17,5 @@ width: 40%;
 display: inline;
 background-color: #fbc800;
 left:0;
-margin:0;
+margin:-20;
 }
