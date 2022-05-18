@@ -7,7 +7,6 @@ function myfunc(){
 let txt = document.getElementById("txt").value; 
 
 
-function spfunc(){
 let sp = document.getElementById("spcl");
 if (sp.checked == true){
 
@@ -30,7 +29,7 @@ j = txt.indexOf("ೆV");
 txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA")
 
 }
-}
+
 let e = txt.indexOf("ೆ"); 
 while (e > -1) { 
 if (txt[e - 4] === "್" && txt[e - 2] === "್") { 
