@@ -1,5 +1,5 @@
 function myfunc(){
-let txt = document.getElementById("txt").innerHTML; 
+let txt = document.getElementById("txt").value; 
 let e = txt.indexOf("ೆ"); 
 while (e > -1) { 
 if (txt[e - 4] === "್" && txt[e - 2] === "್") { 
