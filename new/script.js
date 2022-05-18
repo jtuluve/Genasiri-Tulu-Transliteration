@@ -1,6 +1,6 @@
 let text = document.getElementById("txt").innerHTML; 
 
-e = txt.indexOf("ೆ")
+e = txt.indexOf("ೆ");
 while (e > -1) {
  if (txt[e-4] === "್" && txt[e-2] === "್") {
   txt = txt.slice(0, e - 5) + "e" + txt.slice(e - 5, e) + txt.slice(e + 1);
