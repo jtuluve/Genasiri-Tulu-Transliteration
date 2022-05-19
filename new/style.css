@@ -22,6 +22,8 @@ font-family: tulu;
 .logo{
 font-size: 150%;
 text-align: center;
+top:0;
+position: relative;
 }
 
 .txt{
