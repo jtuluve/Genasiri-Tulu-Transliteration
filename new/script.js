@@ -4,7 +4,7 @@ let tl = document.getElementById("tl");
 if(tl.checked == true){
 document.getElementById(resu).style.font-family="tulu";
 }else{
-document.getElementById(resu).style.font-family="no";
+document.getElementById(resu).style.font-family="";
 }
 }
 
