@@ -19,6 +19,10 @@ font-family: kan;
 font-family: tulu;
 }
 
+.logo{
+font-size: 150%;
+}
+
 .txt{
 color: black;
 width: 100%;
