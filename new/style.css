@@ -29,7 +29,7 @@ font-family: tulu;
 .logo{
 font-size: 150%;
 text-align: center;
-top:-10px;
+padding-top: 20px;
 position: relative;
 }
 
