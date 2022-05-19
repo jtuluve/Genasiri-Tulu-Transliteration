@@ -8,7 +8,7 @@ document.getElementById("resu").style.fontFamily="";
 }
 }
 
-document.getElementById("btn").addEventListener("click", myfunc);
+document.getElementById("txt").addEventListener("input", myfunc);
 function myfunc(){
 
 let txt = document.getElementById("txt").value; 
