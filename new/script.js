@@ -2,9 +2,12 @@
 
 
 document.getElementById("btn").addEventListener("click", myfunc);
+function myfunc(){
+
 let txt = document.getElementById("txt").value; 
 
 let sp = document.getElementById("spcl");
+
 function spcl(){
 if (sp.checked == true){
 
@@ -28,8 +31,6 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
 
 }
 }
-function myfunc(){
-
 
 
 
