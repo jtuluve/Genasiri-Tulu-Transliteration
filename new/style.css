@@ -3,6 +3,7 @@ background-color: #fcf0f0;
 margin: 0;
 border-box:sizing;
 padding:0px;
+-webkit-text-size-adjust: 100%;
 }
 
 @font-face {
