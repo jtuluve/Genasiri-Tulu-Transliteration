@@ -8,7 +8,6 @@ let txt = document.getElementById("txt").value;
 
 let sp = document.getElementById("spcl");
 
-function spcl(){
 if (sp.checked == true){
 
 let j = txt.indexOf("ೆV"); 
@@ -29,7 +28,6 @@ j = txt.indexOf("ೆV");
 
 txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
 
-}
 }
 
 
