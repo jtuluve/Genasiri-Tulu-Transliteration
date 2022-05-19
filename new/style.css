@@ -16,9 +16,6 @@ margin: 0;
   src: url(./fonts/kan.ttf);
 }
 
-div{
-margin:-13px;
-}
 .kan{
 font-family: kan;
 }
