@@ -7,6 +7,10 @@ background-color: #fcf0f0;
   src: url(./fonts/baravu.otf);
 }
 @font-face {
+  font-family: tulu2;
+  src: url(./fonts/baravu.ttf);
+}
+@font-face {
   font-family: kan;
   src: url(./fonts/kan.ttf);
 }
