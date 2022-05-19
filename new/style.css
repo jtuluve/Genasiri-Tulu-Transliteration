@@ -2,6 +2,11 @@ body{
 background-color: #fcf0f0;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(/fonts/baravu.otf);
+}
+
 .txt{
 color: black;
 width: 46%;
