@@ -14,7 +14,8 @@ function myfunc(){
 let txt = document.getElementById("txt").value; 
 
 let sp = document.getElementById("spcl");
-
+sp.addEventListener("click", spcl)
+function spcl(){
 if (sp.checked == true){
 
 let j = txt.indexOf("ೆV"); 
@@ -36,7 +37,7 @@ j = txt.indexOf("ೆV");
 txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
 
 }
-
+}
 
 
 let e = txt.indexOf("ೆ"); 
