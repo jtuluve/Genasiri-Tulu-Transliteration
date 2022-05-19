@@ -1,7 +1,8 @@
+let lang = document.getElementById("lang").value;
+lang.addEventListener["change", lang];
+
 function lang()
         {
-            let lng = document.getElementById("lang").value;
-            let lang = lng.options[lng.selectedIndex].text;
             if (lang == "english"){
 document.getElementById("englang").style.display = "block";
 document.getElementById("tululang").style.display = "none";
