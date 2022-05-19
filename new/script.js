@@ -5,7 +5,7 @@ function lang()
 let lang = document.getElementById("lang").value;
 
             if (lang == "english"){
-document.getElementsByName("englang").style.display = "block";
+document.getElementById("englang").style.display = "block";
 document.getElementById("tululang").style.display = "none";
 document.getElementById("kanlang").style.display = "none";
 }else if (lang == "tulu"){
