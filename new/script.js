@@ -3,15 +3,15 @@ lang.addEventListener("change", lang);
 
 function lang()
         {
-            if (lang == "english"){
+            if (lang.value == "english"){
 document.getElementById("englang").style.display = "block";
 document.getElementById("tululang").style.display = "none";
 document.getElementById("kanlang").style.display = "none";
-}else if (lang == "tulu"){
+}else if (lang.value == "tulu"){
 document.getElementById("englang").style.display = "none";
 document.getElementById("tululang").style.display = "block";
 document.getElementById("kanlang").style.display = "none";
-}else if(lang == "kannada"){
+}else if(lang.value == "kannada"){
 document.getElementById("englang").style.display = "none";
 document.getElementById("tululang").style.display = "none";
 document.getElementById("kanlang").style.display = "block";
