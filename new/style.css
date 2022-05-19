@@ -41,3 +41,9 @@ background-color: #ef2648;
 .darkblue{
 color: #042963;
 }
+
+#spcl{
+vertical-align: middle;
+position: relative;
+bottom: 1px;
+}
