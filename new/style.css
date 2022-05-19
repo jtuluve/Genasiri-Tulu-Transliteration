@@ -6,7 +6,14 @@ background-color: #fcf0f0;
   font-family: tulu;
   src: url(./fonts/baravu.ttf);
 }
+@font-face {
+  font-family: kan;
+  src: url(./fonts/kan.ttf);
+}
 
+.kan{
+font-family: kan;
+}
 
 .tulu{
 font-family: tulu;
