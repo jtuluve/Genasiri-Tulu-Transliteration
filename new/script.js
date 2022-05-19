@@ -1,4 +1,4 @@
-let lang = document.getElementById("lang").value;
+let lang = document.getElementById("lang");
 lang.addEventListener["change", lang];
 
 function lang()
