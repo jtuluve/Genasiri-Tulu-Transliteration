@@ -50,6 +50,22 @@ txt = txt.slice(0, j - 1) + "o" + txt[j - 1] + txt.slice(j + 2);
 j = txt.indexOf("ೆV"); 
 }
 } 
+}
+
+let J = txt.indexOf("ೇV"); 
+while (J > -1) { 
+if (txt[J - 4] === "್" && txt[J - 2] === "್") { 
+txt = txt.slice(0, J - 5) + "O" + txt.slice(J - 5, J) + txt.slice(J + 2);
+J = txt.indexOf("ೇV"); 
+} else { 
+if (txt[J - 2] === "್") { 
+txt = txt.slice(0, J - 3) + "O" + txt.slice(J - 3, J) + txt.slice(J + 2); 
+J= txt.indexOf("ೇV"); 
+} else { 
+txt = txt.slice(0, J - 1) + "O" + txt[J - 1] + txt.slice(J + 2); 
+J = txt.indexOf("ೇV"); 
+}
+} 
 } 
 
 txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
