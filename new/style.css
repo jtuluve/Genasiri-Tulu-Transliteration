@@ -3,8 +3,13 @@ background-color: #fcf0f0;
 }
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: tulu;
   src: url(/fonts/baravu.otf);
+}
+
+
+.tulu{
+font-family: tulu;
 }
 
 .txt{
