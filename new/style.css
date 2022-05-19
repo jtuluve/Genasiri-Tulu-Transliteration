@@ -14,7 +14,6 @@ font-family: tulu;
 
 .txt{
 color: black;
-width: 47%;
 height: 200px;
 display: inline;
 background-color: #fbc800;
@@ -25,7 +24,6 @@ text-align: top;
 .resu{
 position: relative;
 color: black;
-width: 47%;
 height: 200px;
 display: inline;
 background-color: #fbc800;
