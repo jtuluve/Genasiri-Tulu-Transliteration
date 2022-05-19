@@ -2,9 +2,9 @@
 function tulu(){
 let tl = document.getElementById("tl");
 if(tl.checked == true){
-document.getElementById(resu).style.font-family="tulu";
+document.getElementById("resu").style.fontFamily="tulu";
 }else{
-document.getElementById(resu).style.font-family="";
+document.getElementById("resu").style.fontFamily="";
 }
 }
 
