@@ -1,5 +1,12 @@
 
-
+function tulu(){
+let tl = document.getElementById("tl");
+if(tl.checked == true){
+tl.style.font-family="tulu";
+}else{
+tl.style.font-family="no";
+}
+}
 
 document.getElementById("btn").addEventListener("click", myfunc);
 function myfunc(){
