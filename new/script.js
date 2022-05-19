@@ -1,17 +1,18 @@
 function lang()
         {
-            var lang = document.getElementById("lang").value;
+            let lng = document.getElementById("lang").value;
+            let lang = lng.options[lng.selectedIndex].text;
             if (lang == "english"){
-document.getElementById("englang").style.display = "none";
-document.getElementById("tululang").style.display = "block";
-document.getElementById("kanlang").style.display = "block";
-}else if (lang == "tulu"){
 document.getElementById("englang").style.display = "block";
 document.getElementById("tululang").style.display = "none";
-document.getElementById("kanlang").style.display = "block";
-}else if(lang == "kannada"){
+document.getElementById("kanlang").style.display = "none";
+}else if (lang == "tulu"){
 document.getElementById("englang").style.display = "none";
 document.getElementById("tululang").style.display = "block";
+document.getElementById("kanlang").style.display = "none";
+}else if(lang == "kannada"){
+document.getElementById("englang").style.display = "none";
+document.getElementById("tululang").style.display = "none";
 document.getElementById("kanlang").style.display = "block";
 }
 }
