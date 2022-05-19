@@ -23,6 +23,7 @@ text-align: top;
 }
 
 .resu{
+position: relative;
 color: black;
 width: 46%;
 height: 200px;
