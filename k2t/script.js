@@ -1,7 +1,6 @@
 document.getElementById("lang").addEventListener("change", lang);
 
-function lang()
-        {
+function lang(){
 let lang = document.getElementById("lang").value;
 
             if (lang == "english"){
@@ -67,6 +66,9 @@ j = txt.indexOf("ೆV");
 } 
 }
 
+
+
+
 let J = txt.indexOf("ೇV"); 
 while (J > -1) { 
 if (txt[J - 4] === "್" && txt[J - 2] === "್") { 
@@ -83,7 +85,7 @@ J = txt.indexOf("ೇV");
 } 
 } 
 
-txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA");
+txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uA");
 
 }
 
