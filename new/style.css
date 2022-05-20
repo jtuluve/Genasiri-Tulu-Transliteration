@@ -90,7 +90,7 @@ width: 14px;
 }
 @supports (background-clip: text) {
   .logograd {
-    background-image: linear-gradient(white, #7a7576);
+    background-image: linear-gradient(to right, white, #7a7576);
     background-clip: text;
     color: transparent;
   }
@@ -100,7 +100,7 @@ width: 14px;
 }
 @supports (background-clip: text) {
   .logograd2 {
-    background-image: linear-gradient(#7a7576, white);
+    background-image: linear-gradient(to right, #7a7576, white);
     background-clip: text;
     color: transparent;
   }
