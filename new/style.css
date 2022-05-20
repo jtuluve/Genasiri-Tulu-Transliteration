@@ -84,3 +84,14 @@ bottom: 1px;
 height: 14px;
 width: 14px;
 }
+
+.gradient-text {
+  color: red;
+}
+@supports (background-clip: text) {
+  .gradient-text {
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    background-clip: text;
+    color: transparent;
+  }
+}
