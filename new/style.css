@@ -33,7 +33,7 @@ padding-top: 20px;
 margin-top: -10px;
 position: relative;
 color: white;
-background-image: linear-gradient(to right, white, black);
+background-image: linear-gradient(to right, #764BA2, #667EEA, #764BA2);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
