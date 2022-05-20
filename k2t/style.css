@@ -1,0 +1,87 @@
+body{
+background-color: #fcf0f0;
+margin: 0;
+border-box:sizing;
+padding:0px;
+-webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: tulu;
+  src: url(./fonts/brvu2.otf);
+}
+@font-face {
+  font-family: tulu2;
+  src: url(./fonts/baravu.ttf);
+}
+@font-face {
+  font-family: kan;
+  src: url(./fonts/kan.ttf);
+}
+
+.kan{
+font-family: kan;
+}
+
+.tulu{
+font-family: tulu;
+}
+
+.logo{
+text-align: center;
+padding-top: 20px;
+margin-top: -10px;
+position: relative;
+}
+
+.txt{
+color: black;
+width: 100%;
+height: 200px;
+display: inline;
+background-color: #fbc800;
+left: 0;
+text-align: top;
+}
+
+.resu{
+position: relative;
+color: black;
+width: 100%;
+height: 200px;
+display: inline;
+background-color: #fbc800;
+left:0;
+text-align: top;
+right: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.btn{
+width: 20%;
+background-color: #ef2648;
+}
+
+.darkblue{
+color: #042963;
+}
+
+.spcl{
+vertical-align: middle;
+position: relative;
+bottom: 1px;
+height: 14px;
+width: 14px;
+}
+

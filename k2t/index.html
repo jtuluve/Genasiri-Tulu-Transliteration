@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ಕನ್ನಡ script to tulu script converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw" />
+  </head>
+  <body>
+
+<!-- loading -->
+<div class="loading" style="height: 110%; width: 100%; position: fixed; background: black; z-index: 10;"><h3 style="color: white;">Loading...</h3></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(window).on("load",function(){ $(".loading").fadeOut("slow"); }); 
+</script>
+
+
+<div style="background-color:#180661;">
+<div style="margin-top: -15px; margin-bottom:-15px; align-items: center; background-color: maroon; width: 100%;">
+<p class="logo">
+<span class="kan" style="font-size: 134%; color:cyan; font-weight: lighter;">ಕನ್ನಡ</span><span style="font-family: Times New Roman; font-weight: bold; font-size: 194%; color: black; -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: white;">TO</span><span style="font-family:tulu2; font-weight: 50; font-size: 170%; color:cyan;">tulu</span>
+</p>
+</div>
+
+<select name="language" id="lang">
+  <option value="english">english</option>
+  <option value="tulu">tulu</option>
+  <option value="kannada">kannada</option>
+</select>
+<div style="padding: 8px;">
+<p id="kanlang" style="color: white; display:none;">
+ಕನ್ನಡದಲ್ಲಿ ಬರೆದ ಪಠ್ಯವನ್ನು ತುಳುವಿಗೆ ಬದಲಾಯಿಸಬೇಕಿದ್ದರೆ ಕೆಳಗೆ ಇರುವ ಜಾಗದಲ್ಲಿ ಬರೆಯಿರಿ.
+ಏನಾದರೂ ಸಮಸ್ಯೆ ಇದ್ದರೆ ಸಂಘಟನೆಯ ಈಮೈಲ್ ವಿಳಾಸಕ್ಕೆ ಸಂದೇಶ ಕಳುಹಿಸಿ.
+</p>
+<p id="tululang" style="color: white; display: none; font-family: tulu;">
+knAnwwA bertin pedaelnA AiMgAlIxAXgA bdlieser titfA ekatfin jaegwA berel. dal etaMdor AitAtAMw sMgd AIXeXemlAXgA esalAlMj mlApuel
+</p>
+<p id="englang" style="color: white; display: block; font-size: 85%;">
+If you need to change the text written in Kannada to Tulu, write in the space below. If you have any questions please email us.
+</p>
+<a style="color: white; font-size: 85%; margin-bottom: 10px;" href="mailto:jaitulunadofficial@gmail.com">(jaitulunadofficial@gmail.com)</a>
+</div>
+
+<div style="background-color:#c2f0ed; background-width: 100%;">
+<label style="font-size:70%;">
+<input type="checkbox" id="spcl" class="spcl" name="spcl" onclick="myfunc()" style="align: bottom; bottom: 0;"/>
+Enable special charcters 
+</label>
+<label style="font-size:70%;">
+<input type="checkbox" class="spcl" id="tl" onclick="tulu()" checked/>
+Tulu Script
+</label>
+</div>
+</div>
+<div class="main">
+<div><textarea type="text" class="txt" id="txt" placeholder="type in kannada"></textarea></div>
+<div><textarea type="text" class="resu" id="resu" placeholder="tululipiqA" style="font-family: tulu;" readonly></textarea></div><br>
+</div>
+
+<div  style="margin-left: 15px;">
+<p id="englang2" style="display: block;"> To enable special charcters of tulu language
+use <span class="darkblue">"V"</span> after special character. Ex: <br>
+1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> returns <span class="darkblue tulu">"mlApuov"</span> and <span class="darkblue">"ಮಲ್ಪುವೇV"</span> returns <span class="darkblue tulu">"mlApuOv"</span><br>
+2. <span class="darkblue">"ಎV"</span> returns <span class="darkblue tulu">"oA"</span> and <span class="darkblue">"ಏV"</span> returns <span class="darkblue tulu">"OA"</span><br>
+</p>
+
+
+<p id="kanlang2" style="display: none;">
+ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ವಿಶೇಷ ಅಕ್ಷರದ ನಂತರ "V" ಬಳಸಿ. ಉದಾ: <br>
+1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuov"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"ಮಲ್ಪುವೇV"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuOv"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+<br>2. <span class="darkblue">"ಎV"</span> ಬರೆದರೆ <span class="darkblue tulu">"oA"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"ಏV"</span> ಬರೆದರೆ <span class="darkblue tulu">"OA"</span> ‍ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+</p>
+
+<p id="tululang2" style="font-family: tulu; display: none;">
+viESx AAecAcaeraelnA gleser viESx AAecAcaerad eAduru "V" berel. 
+<br>1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> berMw <span class="darkblue">"mlApuov"</span> bpfuMwu ebak <span class="darkblue">"ಮಲ್ಪುವೇV"</span> berMw <span class="darkblue">"mlApuOv"</span> bpfuMwu.
+<br>2. <span class="darkblue">"ಎV"</span> berMw <span class="darkblue">"oA"</span> bpfuMwu ebak <span class="darkblue">"ಏV"</span> berMw <span class="darkblue">"OA"</span> bpfuMwu.
+</p>
+
+</div>
+      <script src="script.js"></script>
+  </body>
+</html>
+
+
