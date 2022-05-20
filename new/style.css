@@ -32,12 +32,8 @@ text-align: center;
 padding-top: 20px;
 margin-top: -10px;
 position: relative;
-}
-.logo span{
 color: white;
-background-image: linear-gradient(to right, #764BA2, #C2E9FB, #764BA2);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+border:2px solid black;
 }
 .txt{
 color: black;
