@@ -86,19 +86,16 @@ width: 14px;
 }
 
 .logograd {
-    color: white;
-    background-image: linear-gradient(to right, white, #7a7576);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+color: white;
+background-image: linear-gradient(to right, white, #7a7576);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .logograd2 {
-  color: white;
+color: white;
+background-image: linear-gradient(to right, #7a7576, white);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
-@supports (background-clip: text) {
-  .logograd2 {
-    background-image: linear-gradient(to right, #7a7576, white);
-    background-clip: text;
-    color: transparent;
-  }
 }
