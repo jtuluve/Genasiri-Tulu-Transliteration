@@ -32,6 +32,10 @@ text-align: center;
 padding-top: 20px;
 margin-top: -10px;
 position: relative;
+color: white;
+background-image: linear-gradient(to right, white, black);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .txt{
@@ -85,17 +89,3 @@ height: 14px;
 width: 14px;
 }
 
-.logograd {
-color: white;
-background-image: linear-gradient(to right, white, black);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-.logograd2 {
-color: white;
-background-image: linear-gradient(to right, #7a7576, black);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-}
