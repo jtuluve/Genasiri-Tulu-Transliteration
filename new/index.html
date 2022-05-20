@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+
+<!-- loading -->
+<div class="loading" style="height: 100%; width: 100%; position: absolute; background: black;"><h3 style="color: white;">Loading...</h3></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(window).on("load",function(){ $(".loading").fadeOut("slow"); }); 
+</script>
+
+
 <div style="background-color:#180661;">
 <div style="margin-top: -15px; margin-bottom:-15px; align-items: center; background-color: #ff3056; width: 100%;">
 <p class="logo">
