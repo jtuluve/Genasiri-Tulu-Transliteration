@@ -160,13 +160,13 @@ G = txt.indexOf("ೋ");
 let f = txt.indexOf("ೈ"); 
 while (f > -1) { 
 if (txt[f - 4] === "್" && txt[f - 2] === "್") { 
-txt = txt.slice(0, f - 5) + "ee" + txt.slice(f - 5, f) + txt.slice(f + 1);
+txt = txt.slice(0, f - 5) + "eXe" + txt.slice(f - 5, f) + txt.slice(f + 1);
 f = txt.indexOf("ೈ"); 
 } else { 
 if (txt[f - 2] === "್") { 
-txt = txt.slice(0, f - 3) + "ee" + txt.slice(f - 3, f) + txt.slice(f + 1); 
+txt = txt.slice(0, f - 3) + "eXe" + txt.slice(f - 3, f) + txt.slice(f + 1); 
 f = txt.indexOf("ೈ"); } else { 
-txt = txt.slice(0, f - 1) + "ee" + txt[f - 1] + txt.slice(f + 1); 
+txt = txt.slice(0, f - 1) + "eXe" + txt[f - 1] + txt.slice(f + 1); 
 f = txt.indexOf("ೈ"); 
   }
  } 
