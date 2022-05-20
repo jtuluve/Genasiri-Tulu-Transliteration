@@ -85,7 +85,7 @@ J = txt.indexOf("ೇV");
 } 
 } 
 
-txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uA");
+txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 
 }
 
