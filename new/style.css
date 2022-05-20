@@ -32,8 +32,10 @@ text-align: center;
 padding-top: 20px;
 margin-top: -10px;
 position: relative;
+}
+.logo span{
 color: white;
-border:2px solid black;
+border:1px solid black;
 }
 .txt{
 color: black;
