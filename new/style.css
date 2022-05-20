@@ -35,7 +35,8 @@ position: relative;
 }
 .logo span{
 color: white;
-border:1px solid black;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
 }
 .txt{
 color: black;
