@@ -87,14 +87,14 @@ width: 14px;
 
 .logograd {
 color: white;
-background-image: linear-gradient(to right, white, #7a7576);
+background-image: linear-gradient(to right, white, black);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
 .logograd2 {
 color: white;
-background-image: linear-gradient(to right, #7a7576, white);
+background-image: linear-gradient(to right, #7a7576, black);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
