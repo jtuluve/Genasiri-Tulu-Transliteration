@@ -85,12 +85,22 @@ height: 14px;
 width: 14px;
 }
 
-.gradient-text {
-  color: red;
+.logograd {
+  color: white;
 }
 @supports (background-clip: text) {
-  .gradient-text {
-    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  .logograd {
+    background-image: linear-gradient(white, #7a7576);
+    background-clip: text;
+    color: transparent;
+  }
+}
+.logograd2 {
+  color: white;
+}
+@supports (background-clip: text) {
+  .logograd2 {
+    background-image: linear-gradient(#7a7576, white);
     background-clip: text;
     color: transparent;
   }
