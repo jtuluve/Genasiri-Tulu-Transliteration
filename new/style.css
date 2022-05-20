@@ -33,7 +33,7 @@ padding-top: 20px;
 margin-top: -10px;
 position: relative;
 }
-.logo p{
+.logo span{
 color: white;
 background-image: linear-gradient(to right, #764BA2, #C2E9FB, #764BA2);
 -webkit-background-clip: text;
