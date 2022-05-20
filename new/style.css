@@ -27,17 +27,18 @@ font-family: kan;
 font-family: tulu;
 }
 
-.logo p{
+.logo{
 text-align: center;
 padding-top: 20px;
 margin-top: -10px;
 position: relative;
+}
+.logo p{
 color: white;
 background-image: linear-gradient(to right, #764BA2, #C2E9FB, #764BA2);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-
 .txt{
 color: black;
 width: 100%;
