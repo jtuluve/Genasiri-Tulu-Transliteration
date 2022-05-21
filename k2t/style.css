@@ -85,3 +85,6 @@ height: 14px;
 width: 14px;
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
