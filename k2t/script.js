@@ -195,7 +195,7 @@ let H = txt.indexOf("ರ್");
 let lgt = txt.length;
 
 while (H > -1){
-if(txt[H + 2] === " " || txt[H + 2] === "‍" || txt[H + 2] === "‌" || txt[H - 1] === "್" || lgt-1 === H){
+if(txt[H + 2] === " " || txt[H + 2] === "‍" || txt[H + 2] === "‌" || txt[H - 1] === "್" || lgt-2 === H){
 txt = txt.replace("ರ್", "rA");
 H = txt.indexOf("ರ್");
 }else{
