@@ -193,11 +193,11 @@ let i = txt.indexOf("ಿ")
 
 while (i > -1){
 if (txt[i - 4] === "್" && txt[i - 2] === "್") { 
-txt = txt.slice(0, i - 4) + "i" + txt.slice(i - 5, i) + txt.slice(i + 1);
+txt = txt.slice(0, i - 4) + "i" + txt.slice(i - 4, i) + txt.slice(i+1);
 i = txt.indexOf("ಿ"); 
 } else { 
 if (txt[i - 2] === "್") { 
-txt = txt.slice(0, i - 2) + "i" + txt.slice(i - 2); 
+txt = txt.slice(0, i - 2) + "i" + txt.slice(i - 2, i) + txt.slice(i+1); 
 i = txt.indexOf("ಿ"); } else { 
 txt = txt.slice(0, i) + "i" + txt.slice(i + 1); 
 i = txt.indexOf("ಿ"); 
