@@ -67,7 +67,6 @@ j = txt.indexOf("ೆV");
 }
 
 
-txt = txt.replace(/ಕೊೖ/g, "eeka");
 
 let J = txt.indexOf("ೇV"); 
 while (J > -1) { 
@@ -90,6 +89,7 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 }
 
 
+txt = txt.replace(/ಕೊೖ/g, "eeka");
 
 let e = txt.indexOf("ೆ"); 
 while (e > -1) { 
