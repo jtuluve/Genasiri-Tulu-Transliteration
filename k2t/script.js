@@ -206,6 +206,23 @@ i = txt.indexOf("ಿ");
 }
 
 
+let I = txt.indexOf("ೀ")
+
+while (I > -1){
+if (txt[I - 4] === "್" && txt[I - 2] === "್") { 
+txt = txt.slice(0, I - 4) + "I" + txt.slice(I - 4, I) + txt.slice(I+1);
+I = txt.indexOf("ೀ"); 
+} else { 
+if (txt[I - 2] === "್") { 
+txt = txt.slice(0, I - 2) + "I" + txt.slice(I - 2, I) + txt.slice(I+1); 
+I = txt.indexOf("ೀ"); } else { 
+txt = txt.slice(0, I) + "I" + txt.slice(I + 1); 
+I = txt.indexOf("ೀ"); 
+}
+}
+}
+
+
 let H = txt.indexOf("ರ್");
 let lgt = txt.length;
 
