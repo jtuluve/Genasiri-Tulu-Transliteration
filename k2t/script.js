@@ -249,9 +249,11 @@ function copy() {
   copyText.select(); 
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-  navigator.clipboard.writeText(copyText.value);
+  navigator.clipboard.writeText(copyText.value).then(function() {
+  alert("Copying to clipboard was successful!");
+}, function(err) {
+  alert("Could not copy text.");
+});
   }
 
-function copyAlert(){
-alert("Copied. Please note that copied text will not be in Tulu script. Because, Tulu doesn't have unicode yet. Apply Baravu font to see it in Tulu.");
-}
+
