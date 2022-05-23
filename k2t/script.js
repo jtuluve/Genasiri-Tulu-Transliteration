@@ -250,7 +250,7 @@ function copy() {
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
   navigator.clipboard.writeText(copyText.value).then(function() {
-  alert("Copying to clipboard was successful!");
+  alert("Copied to clipboard. Please note that copied text will not be in Tulu script. Because Tulu doesn't have unicode yet. Please apply baravu font to get text in Tulu.");
 }, function(err) {
   alert("Could not copy text.");
 });
