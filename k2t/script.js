@@ -244,15 +244,13 @@ document.getElementById("resu").value = rep;
 
 
 function copy() {
-  /* Get the text field */
   var copyText = document.getElementById("resu");
 
-  /* Select the text field */
   copyText.select(); 
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-   /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyText.value);
+  alert("Copied. Please note that copied text will not be in tulu because tulu doesn't have unicode yet.")
 }
 
 
