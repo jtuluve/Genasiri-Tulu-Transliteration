@@ -245,11 +245,9 @@ document.getElementById("resu").value = rep;
 
 function copy() {
 
-var copyText = document.getElementById("resu");
+var copyText = document.getElementById("resu").value;
 
-
-copyText.focus();
-copyText.selct();
+navigator.clipboard.writeText(copyText);
 alert("Text copied to clipboard");
 }
 
