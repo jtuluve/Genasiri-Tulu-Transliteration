@@ -245,10 +245,8 @@ document.getElementById("resu").value = rep;
 
 function copy() {
 
-var copyText = document.getElementById("resu").value;
+var copyText = document.getElementById("resu");
 
-copyText.select();
-copyText.setSelectionRange(0, 99999); 
 
 navigator.clipboard.writeText(copyText.value);
 
