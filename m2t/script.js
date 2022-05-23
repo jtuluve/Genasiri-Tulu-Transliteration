@@ -1,3 +1,54 @@
+document.getElementById("lang").addEventListener("change", lang);
+
+function lang(){
+let lang = document.getElementById("lang").value;
+
+            if (lang == "english"){
+
+document.getElementById("englang").style.display = "block";
+document.getElementById("englang2").style.display = "block";
+document.getElementById("tululang").style.display = "none";
+document.getElementById("tululang2").style.display = "none";
+document.getElementById("kanlang").style.display = "none";
+document.getElementById("kanlang2").style.display = "none";
+
+}else if (lang == "tulu"){
+
+document.getElementById("englang").style.display = "none";
+document.getElementById("englang2").style.display = "none";
+document.getElementById("tululang").style.display = "block";
+document.getElementById("tululang2").style.display = "block";
+document.getElementById("kanlang").style.display = "none";
+document.getElementById("kanlang2").style.display = "none";
+
+}else if(lang == "kannada"){
+
+document.getElementById("englang").style.display = "none";
+document.getElementById("englang2").style.display = "none";
+document.getElementById("tululang").style.display = "none";
+document.getElementById("tululang2").style.display = "none";
+document.getElementById("kanlang").style.display = "block";
+document.getElementById("kanlang2").style.display = "block";
+
+}
+}
+
+function tulu(){
+let tl = document.getElementById("tl");
+if(tl.checked == true){
+document.getElementById("resu").style.fontFamily="tulu";
+}else{
+document.getElementById("resu").style.fontFamily="";
+}
+}
+
+document.getElementById("txt").addEventListener("input", myfunc);
+function myfunc(){
+
+let txt = document.getElementById("txt").value; 
+
+let sp = document.getElementById("spcl");
+
 if (sp.checked == true){
 
 let j = txt.indexOf("ೆV"); 
