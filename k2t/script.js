@@ -248,8 +248,8 @@ function copy() {
 var copyText = document.getElementById("resu");
 
 
-navigator.clipboard.writeText(copyText.value);
-
+copyText.focus();
+copyText.selct();
 alert("Text copied to clipboard");
 }
 
