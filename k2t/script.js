@@ -244,12 +244,15 @@ document.getElementById("resu").value = rep;
 
 
 function copy() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
 
-let copyText = document.getElementById("resu").value;
+  /* Select the text field */
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-navigator.clipboard.writeText(copyText);
-alert("Text copied to clipboard");
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
 }
-
 
 
