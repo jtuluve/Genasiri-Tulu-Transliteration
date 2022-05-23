@@ -238,3 +238,21 @@ H = txt.indexOf("ರ್");
 let rep = txt.replace(/ಅ/g, "AA").replace(/ಆ/g, "Aa").replace(/ಇ/g, "Ai").replace(/ಈ/g, "AI").replace(/ಉ/g, "Au").replace(/ಊ/g, "AU").replace(/ಋ/g, "AR").replace(/ೠ/g, "ARR").replace(/ಎ/g, "eA").replace(/ಏ/g, "EA").replace(/ಐ/g, "eeA").replace(/ಒ/g, "eAa").replace(/ಓ/g, "FAa").replace(/ಔ/g, "AY").replace(/ಂ/g, "M").replace(/ಃ/g, "H").replace(/ಕ/g, "k").replace(/ಖ/g, "K").replace(/ಗ/g, "g").replace(/ಘ/g, "G").replace(/ಙ/g, "Z").replace(/ಚ/g, "c").replace(/ಛ/g, "C").replace(/ಜ/g, "j").replace(/ಝ/g, "J").replace(/ಞ/g, "z").replace(/ಟ/g, "q").replace(/ಠ/g, "Q").replace(/ಡ/g, "w").replace(/ಢ/g, "W").replace(/ಣ/g, "N").replace(/ತ/g, "t").replace(/ಥ/g, "T").replace(/ದ/g, "d").replace(/ಧ/g, "D").replace(/ನ/g, "n").replace(/ಪ/g, "p").replace(/ಫ/g, "P").replace(/ಬ/g, "b").replace(/ಭ/g, "B").replace(/ಮ/g, "m").replace(/ಯ/g, "y").replace(/ರ/g, "r").replace(/ಲ/g, "l").replace(/ವ/g, "v").replace(/ಶ/g, "S").replace(/ಷ/g, "x").replace(/ಸ/g, "s").replace(/ಹ/g, "h").replace(/ಳ/g, "L").replace(/್/g, "A").replace(/ಾ/g, "a").replace(/ು/g, "u").replace(/ೂ/g, "U").replace(/ೌ/g, "Y").replace(/ಿ/g, "i").replace(/ೀ/g, "I").replace(/ೃ/g, "R").replace(/‍/g, "X").replace(/‌/g, "X"); 
 rep = rep.replace(/eXee/g, "eXe");
 document.getElementById("resu").value = rep;
+}
+
+
+
+
+
+function copy() {
+  var copyText = document.getElementById("resu");
+
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  navigator.clipboard.writeText(copyText.value).then(function() {
+  alert("Copied to clipboard. Please note that copied text will not be in Tulu script. Because Tulu doesn't have unicode yet. Please apply baravu font to get text in Tulu.");
+}, function(err) {
+  alert("Could not copy text.");
+});
+  }
