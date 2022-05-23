@@ -250,7 +250,6 @@ function copy() {
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
   navigator.clipboard.writeText(copyText.value);
-  alert("Copied. Please note that copied text will not be in english. Apply baravu font to get it in tulu.");
-}
+  }
 
 
