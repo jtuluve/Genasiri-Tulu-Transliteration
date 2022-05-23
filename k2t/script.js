@@ -245,7 +245,7 @@ document.getElementById("resu").value = rep;
 
 function copy() {
   /* Get the text field */
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("resu");
 
   /* Select the text field */
   copyText.select(); 
