@@ -26,7 +26,7 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 <span class="kan" style="font-size: 134%; color:cyan; font-weight: lighter;">ಕನ್ನಡ</span><span style="font-family: Times New Roman; font-weight: bold; font-size: 194%; color: black; -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: white;">TO</span><span style="font-family:tulu2; font-weight: 50; font-size: 170%; color:cyan;">tulu</span>
 </p>
 </div>
-
+<p>description language:</p>
 <select name="language" id="lang">
   <option value="english">english</option>
   <option value="tulu">tulu</option>
@@ -61,7 +61,7 @@ Tulu Script
 <div><textarea type="text" class="txt" id="txt" placeholder="type in kannada"></textarea></div>
 <div><textarea type="text" class="resu" id="resu" placeholder="tululipiqA" style="font-family: tulu;" readonly></textarea></div><br>
 </div>
-
+<input type="submit" onclick="copy()" placeholder="copy"/>
 <div  style="margin-left: 15px;">
 <p id="englang2" style="display: block;"> To enable special charcters of tulu language
 use <span class="darkblue">"V"</span> after special character. Ex: <br>
