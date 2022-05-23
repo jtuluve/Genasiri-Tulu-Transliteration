@@ -252,4 +252,6 @@ function copy() {
   navigator.clipboard.writeText(copyText.value);
   }
 
-
+function copyAlert(){
+alert("Copied. Please note that copied text will not be in Tulu script. Because, Tulu doesn't have unicode yet. Apply Baravu font to see it in Tulu.");
+}
