@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&&family=M+PLUS+Rounded+1c:wght@900&display=swap');
 body{
 background:#070430;
 margin: 0;
@@ -15,8 +16,8 @@ border-radius: 0px 30px 30px;
 flex-wrap: wrap;
 margin:20px;
 box-shadow: #075ae0 -5px 5px, rgba(7, 90, 224, 0.3) -10px 10px, rgba(7, 90, 224, 0.2) -15px 15px, rgba(7, 90, 224, 0.1) -20px 20px, rgba(7, 90, 224, 0.05) -25px 25px;
-
 }
+
 .pg-flex{
 display: flex;
 width:100%;
