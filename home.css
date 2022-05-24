@@ -16,6 +16,8 @@ margin:20px;
 }
 .pg-flex{
 display: flex;
-width: 70%;
+width: 60%;
 flex-wrap: wrap;
+justify-content:center;
+align: center;
 }
