@@ -1,4 +1,4 @@
-body{
+Ebody{
 background:#070430;
 margin: 0;
 border-box:sizing;
@@ -17,7 +17,8 @@ margin:20px;
 }
 .pg-flex{
 display: flex;
-width:100%;
+width:65%;
 flex-wrap: wrap;
 justify-content:space-evenly;
+margin: auto;
 }
