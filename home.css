@@ -27,4 +27,6 @@ margin: auto;
     top: 10%; left: 10%;
     background: linear-gradient(transparent, navy);
     content: '';
+ width:250px;
+ height:auto;
 }
