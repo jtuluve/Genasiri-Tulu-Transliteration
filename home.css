@@ -8,8 +8,7 @@ padding:0px;
 .pg{
 width: 220px;
 height: 350px;
-background: gray;
-background-image: linear-gradient(to right bottom, #fd746c, #ff9068);
+background: cyan;
 align-items: center;
 border-radius: 0px 30px 30px;
 flex-wrap: wrap;
