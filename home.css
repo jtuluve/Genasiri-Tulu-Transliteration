@@ -1,5 +1,9 @@
 body{
 background:#070430;
+margin: 0;
+border-box:sizing;
+padding:0px;
+-webkit-text-size-adjust: 100%;
 }
 .pg{
 background: gray;
