@@ -18,6 +18,6 @@ margin:20px;
 display: flex;
 width:65%;
 flex-wrap: wrap;
-justify-content:space-evenly;
+justify-content:space-between;
 margin: auto;
 }
