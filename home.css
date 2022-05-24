@@ -5,6 +5,32 @@ border-box:sizing;
 padding:0px;
 -webkit-text-size-adjust: 100%;
 }
+.custom-shape-divider-top-1653378768 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1653378768 svg {
+    position: relative;
+    display: block;
+    width: calc(195% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-top-1653378768 .shape-fill {
+    fill: #790000;
+}
+
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1653378768 svg {
+        width: calc(198% + 1.3px);
+        height: 116px;
+    }
+}
 .pg{
 background: gray;
 background-image: linear-gradient(to right bottom, #9796f0, #fbc7d4);
