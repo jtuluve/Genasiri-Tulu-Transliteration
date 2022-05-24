@@ -21,7 +21,7 @@ flex-wrap: wrap;
 justify-content:space-around;
 margin: auto;
 }
-.pg-flex:before {
+.pg:before {
     position: absolute;
     z-index: -1;
     top: 10%; left: 10%;
