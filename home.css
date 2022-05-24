@@ -1,4 +1,5 @@
 
 .pg{
-background-image: linear-gradient(#9796f0, #fbc7d4);
+background: gray;
+background-image: linear-gradient(to right bottom, #9796f0, #fbc7d4);
 }
