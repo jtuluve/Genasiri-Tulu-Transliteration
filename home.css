@@ -9,6 +9,7 @@ padding:0px;
 width: 220px;
 height: 350px;
 background: cyan;
+background-image: linear-gradient(to right bottom, #fd746c, #ff9068);
 align-items: center;
 border-radius: 0px 30px 30px;
 flex-wrap: wrap;
