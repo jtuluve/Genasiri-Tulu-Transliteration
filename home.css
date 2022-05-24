@@ -16,7 +16,7 @@ margin:20px;
 }
 .pg-flex{
 display: flex;
-width:65%;
+width:75%;
 flex-wrap: wrap;
 justify-content:space-around;
 margin: auto;
