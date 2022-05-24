@@ -6,7 +6,8 @@ padding:0px;
 -webkit-text-size-adjust: 100%;
 }
 .pg{
-width: 250px;
+width: 220px;
+height: 350px;
 background: gray;
 background-image: linear-gradient(to right bottom, #fd746c, #ff9068);
 align-items: center;
