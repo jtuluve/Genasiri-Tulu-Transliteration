@@ -17,4 +17,5 @@ margin:20px;
 .pg-flex{
 display: flex;
 width: 70%;
+flex-wrap: wrap;
 }
