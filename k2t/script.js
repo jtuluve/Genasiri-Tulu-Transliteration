@@ -223,9 +223,11 @@ while (H > -1){
 if(txt[H + 2] === " " || txt[H + 2] === "‍" || txt[H + 2] === "‌" || txt[H - 1] === "್" || lgt-2 === H){
 txt = txt.replace("ರ್", "rA");
 H = txt.indexOf("ರ್");
+lgt = txt.length
 }else{
 txt = txt.slice(0, H) + txt[H + 2] + "f" + txt.slice(H + 3);
 H = txt.indexOf("ರ್");
+lgt = text.length
 }
 }
 
