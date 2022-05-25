@@ -227,7 +227,7 @@ lgt = txt.length;
 }else{
 txt = txt.slice(0, H) + txt[H + 2] + "f" + txt.slice(H + 3);
 H = txt.indexOf("ರ್");
-lgt = text.length;
+lgt = txt.length;
 }
 }
 
