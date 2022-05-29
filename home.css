@@ -24,6 +24,7 @@ width:100%;
 flex-wrap: wrap;
 align-items:center;
 margin: auto;
+justify-content:center;
 }
 
 .pg div{
