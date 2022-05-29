@@ -25,3 +25,7 @@ flex-wrap: wrap;
 justify-content:space-around;
 margin: auto;
 }
+
+.pg div{
+flex:1;
+}
