@@ -22,7 +22,7 @@ box-shadow: #075ae0 -5px 5px, rgba(7, 90, 224, 0.3) -10px 10px, rgba(7, 90, 224,
 display: flex;
 width:100%;
 flex-wrap: wrap;
-justify-content:space-around;
+align-items:center;
 margin: auto;
 }
 
