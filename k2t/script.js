@@ -220,7 +220,7 @@ let H = txt.indexOf("ರ್");
 let lgt = txt.length;
 
 while (H > -1){
-if(txt[H + 2] === " " || txt[H + 2] === "‍" || txt[H + 2] === "‌" || txt[H - 1] === "್" || lgt-2 === H){
+if(txt[H + 2] === " " || txt[H + 2] === "‍" || txt[H + 2] === "‌" || txt[H - 1] === "್" || lgt-2 === H || txt[H+2] == /n){
 txt = txt.replace("ರ್", "rA");
 H = txt.indexOf("ರ್");
 lgt = txt.length;
