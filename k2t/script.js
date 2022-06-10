@@ -246,7 +246,7 @@ document.getElementById("resu").value = rep;
 
 
 function copy() {
-  var copyText = document.getElementById("resu");
+  var copyText = rep;
 
   copyText.select(); 
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
