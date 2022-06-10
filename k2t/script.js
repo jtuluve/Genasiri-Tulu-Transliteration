@@ -223,9 +223,11 @@ while (H > -1){
 if (/ಕ|ಖ|ಗ|ಘ|ಙ|ಚ|ಛ|ಜ|ಝ|ಞ|ಟ|ಠ|ಡ|ಢ|ಣ|ತ|ಥ|ದ|ಧ|ನ|ಪ|ಫ|ಬ|ಭ|ಮ|ಯ|ರ|ಲ|ವ|ಶ|ಷ|ಸ|ಹ|ಳ/.test(ra2)){
 txt = txt.slice(0, H) + txt[H + 2] + "f" + txt.slice(H + 3);
 H = txt.indexOf("ರ್");
+ra2 = txt[H+2];
 }else{
 txt = txt.replace("ರ್", "rA");
 H = txt.indexOf("ರ್");
+ra2 = txt[H+2];
 }
 }
 
