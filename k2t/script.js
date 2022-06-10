@@ -88,7 +88,7 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 
 }
 
-
+txt = txt.replace(/್ /g, "್  ");
 txt = txt.replace(/ಕೊೖ/g, "eXeka");
 
 let e = txt.indexOf("ೆ"); 
