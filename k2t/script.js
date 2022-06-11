@@ -24,6 +24,7 @@ document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
 
 document.getElementById("txt").placeholder = "knAnwwA  berel";
+document.getElementById("txt").style.fontFamily="tulu2";
 
 }else if(lang == "kannada"){
 
