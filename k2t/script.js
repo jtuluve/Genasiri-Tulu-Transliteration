@@ -12,6 +12,8 @@ document.getElementById("tululang2").style.display = "none";
 document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
 
+document.getElementById("uvw").innerHTML = "<textarea type=\"text\" class=\"txt\" id=\"txt\" placeholder=\"type in kannada\"></textarea>"
+
 }else if (lang == "tulu"){
 
 document.getElementById("englang").style.display = "none";
@@ -21,6 +23,8 @@ document.getElementById("tululang2").style.display = "block";
 document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
 
+document.getElementById("uvw").innerHTML = "<textarea type=\"text\" class=\"txt\" id=\"txt\" style=\"font-family:tulu2;\" placeholder=\"knAnwwA  berel\"></textarea>"
+
 }else if(lang == "kannada"){
 
 document.getElementById("englang").style.display = "none";
@@ -29,6 +33,8 @@ document.getElementById("tululang").style.display = "none";
 document.getElementById("tululang2").style.display = "none";
 document.getElementById("kanlang").style.display = "block";
 document.getElementById("kanlang2").style.display = "block";
+
+document.getElementById("uvw").innerHTML = "<textarea type=\"text\" class=\"txt\" id=\"txt\" placeholder=\"ಕನ್ನಡದಲ್ಲಿ ಬರೆಯಿರಿ\"></textarea>"
 
 }
 }
