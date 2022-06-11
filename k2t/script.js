@@ -12,7 +12,7 @@ document.getElementById("tululang2").style.display = "none";
 document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
 
-document.getElementById("uvw").innerHTML = "<textarea type='text' class='txt' id='txt' placeholder='type in kannada'></textarea>";
+document.getElementById("uvw").innerHTML = "<textarea type=" +"'text' " + "class=" +"'txt'" +" id=" + "'txt'"+ " placeholder="+ " 'type in kannada'"+"></textarea>";
 
 }else if (lang == "tulu"){
 
