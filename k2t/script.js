@@ -201,28 +201,6 @@ f = txt.indexOf("ೈ");
 
 let i = txt.indexOf("ಿ")
 
-while (i > -1){
-if (txt[i - 4] === "್" && txt[i - 2] === "್") { 
-txt = txt.slice(0, i - 4) + "i" + txt.slice(i - 4, i) + txt.slice(i+1);
-i = txt.indexOf("ಿ"); 
-} else { 
-txt = txt.slice(0, i) + "i" + txt.slice(i + 1); 
-i = txt.indexOf("ಿ"); 
-}
-}
-
-
-let I = txt.indexOf("ೀ")
-
-while (I > -1){
-if (txt[I - 4] === "್" && txt[I - 2] === "್") { 
-txt = txt.slice(0, I - 4) + "I" + txt.slice(I - 4, I) + txt.slice(I+1);
-I = txt.indexOf("ೀ"); 
-} else { 
-txt = txt.slice(0, I) + "I" + txt.slice(I + 1); 
-I = txt.indexOf("ೀ"); 
-}
-}
 
 
 
@@ -245,7 +223,15 @@ ra2 = txt[H+2];
 
 
 let rep = txt.replace(/ಅ/g, "XAA").replace(/ಆ/g, "XAa").replace(/ಇ/g, "XAi").replace(/ಈ/g, "XAI").replace(/ಉ/g, "XAu").replace(/ಊ/g, "XAU").replace(/ಋ/g, "XAR").replace(/ೠ/g, "XARR").replace(/ಎ/g, "eA").replace(/ಏ/g, "EA").replace(/ಐ/g, "eeA").replace(/ಒ/g, "eAa").replace(/ಓ/g, "FAa").replace(/ಔ/g, "XAY").replace(/ಂ/g, "M").replace(/ಃ/g, "H").replace(/ಕ/g, "k").replace(/ಖ/g, "K").replace(/ಗ/g, "g").replace(/ಘ/g, "G").replace(/ಙ/g, "Z").replace(/ಚ/g, "c").replace(/ಛ/g, "C").replace(/ಜ/g, "j").replace(/ಝ/g, "J").replace(/ಞ/g, "z").replace(/ಟ/g, "q").replace(/ಠ/g, "Q").replace(/ಡ/g, "w").replace(/ಢ/g, "W").replace(/ಣ/g, "N").replace(/ತ/g, "t").replace(/ಥ/g, "T").replace(/ದ/g, "d").replace(/ಧ/g, "D").replace(/ನ/g, "n").replace(/ಪ/g, "p").replace(/ಫ/g, "P").replace(/ಬ/g, "b").replace(/ಭ/g, "B").replace(/ಮ/g, "m").replace(/ಯ/g, "y").replace(/ರ/g, "r").replace(/ಲ/g, "l").replace(/ವ/g, "v").replace(/ಶ/g, "S").replace(/ಷ/g, "x").replace(/ಸ/g, "s").replace(/ಹ/g, "h").replace(/ಳ/g, "L").replace(/್/g, "A").replace(/ಾ/g, "a").replace(/ು/g, "u").replace(/ೂ/g, "U").replace(/ೌ/g, "Y").replace(/ಿ/g, "i").replace(/ೀ/g, "I").replace(/ೃ/g, "R").replace(/‌/g, "X").replace(/‍/g, ""); 
+
+
+/* error manager */
 rep = rep.replace(/eXee/g, "eXe").replace(/kh/g, "kXh");
+
+
+
+
+
 document.getElementById("resu").value = rep;
 }
 
