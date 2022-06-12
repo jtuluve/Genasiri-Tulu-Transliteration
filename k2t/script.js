@@ -13,6 +13,7 @@ document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
 
 document.getElementById("txt").placeholder = "type in kannada";
+document.getElementById("txt").style.fontFamily="";
 
 }else if (lang == "tulu"){
 
@@ -36,6 +37,7 @@ document.getElementById("kanlang").style.display = "block";
 document.getElementById("kanlang2").style.display = "block";
 
 document.getElementById("txt").placeholder = "ಕನ್ನಡದಲ್ಲಿ ಬರೆಯಿರಿ";
+document.getElementById("txt").style.fontFamily="";
 
 }
 }
