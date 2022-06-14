@@ -61,6 +61,10 @@ if (sp.checked == true){
 
 let j = txt.indexOf("ೆV"); 
 while (j > -1) { 
+if(txt[j-4]==="ರ" && txt[j-3]==="X" && txt[j-2]==="್"){
+txt = txt.slice(0, j - 4) + "o" + txt.slice(j - 4, j) + txt.slice(j + 2);
+j = txt.indexOf("ೆV"); 
+}else{
 if (txt[j - 4] === "್" && txt[j - 2] === "್") { 
 txt = txt.slice(0, j - 5) + "o" + txt.slice(j - 5, j) + txt.slice(j + 2);
 j = txt.indexOf("ೆV"); 
@@ -73,12 +77,16 @@ txt = txt.slice(0, j - 1) + "o" + txt[j - 1] + txt.slice(j + 2);
 j = txt.indexOf("ೆV"); 
 }
 } 
-}
+}}
 
 
 
 let J = txt.indexOf("ೇV"); 
 while (J > -1) { 
+if(txt[J-4]==="ರ" && txt[J-3]==="X" && txt[J-2]==="್"){
+txt = txt.slice(0, J - 4) + "e" + txt.slice(J - 4, J) + txt.slice(J + 2);
+J = txt.indexOf("ೇV"); 
+}else{
 if (txt[J - 4] === "್" && txt[J - 2] === "್") { 
 txt = txt.slice(0, J - 5) + "O" + txt.slice(J - 5, J) + txt.slice(J + 2);
 J = txt.indexOf("ೇV"); 
@@ -91,7 +99,7 @@ txt = txt.slice(0, J - 1) + "O" + txt[J - 1] + txt.slice(J + 2);
 J = txt.indexOf("ೇV"); 
 }
 } 
-} 
+}}
 
 txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 
