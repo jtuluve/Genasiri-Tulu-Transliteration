@@ -111,6 +111,7 @@ x = txt.indexOf("‍");
 }
 }
 
+
 let e = txt.indexOf("ೆ");
 while (e > -1) { 
 if(txt[e-4]==="ರ" && txt[e-3]==="X" && txt[e-2]==="್"){
@@ -134,18 +135,22 @@ e = txt.indexOf("ೆ");
 
 let E = txt.indexOf("ೇ"); 
 while (E > -1) { 
- if (txt[E - 4] === "್" && txt[E - 2] === "್") { 
-  txt = txt.slice(0, E - 5) + "E" + txt.slice(E - 5, E) + txt.slice(E + 1);
-  E = txt.indexOf("ೇ"); 
+if(txt[E-4]==="ರ" && txt[E-3]==="X" && txt[E-2]==="್"){
+txt = txt.slice(0, E - 4) + "E" + txt.slice(E - 4, E) + txt.slice(E + 1);
+E = txt.indexOf("ೇ"); 
+}else{
+if (txt[E - 4] === "್" && txt[E - 2] === "್") { 
+txt = txt.slice(0, E - 5) + "E" + txt.slice(E - 5, E) + txt.slice(E + 1);
+E = txt.indexOf("ೇ"); 
 } else { 
- if (txt[E - 2] === "್") { 
-  txt = txt.slice(0, E - 3) + "E" + txt.slice(E - 3, E) + txt.slice(E + 1); 
-  E = txt.indexOf("ೇ"); } else { 
-  txt = txt.slice(0, E - 1) + "E" + txt[E - 1] + txt.slice(E + 1); 
-  E = txt.indexOf("ೇ"); 
-  }
- } 
+if (txt[E - 2] === "್") { 
+txt = txt.slice(0, E - 3) + "E" + txt.slice(E - 3, E) + txt.slice(E + 1); 
+E = txt.indexOf("ೇ"); } else { 
+txt = txt.slice(0, E - 1) + "E" + txt[E - 1] + txt.slice(E + 1); 
+E = txt.indexOf("ೇ"); 
+}
 } 
+} }
 
 
 let F = txt.indexOf("ೖ"); 
@@ -159,14 +164,18 @@ txt = txt.slice(0, F - 3) + "eXe" + txt.slice(F - 3, F) + txt.slice(F + 1);
 F = txt.indexOf("ೖ"); } else { 
 txt = txt.slice(0, F - 1) + "eXe" + txt[F - 1] + txt.slice(F + 1); 
 F = txt.indexOf("ೖ"); 
-  }
- } 
+}
+} 
 } 
 
 
 let g = txt.indexOf("ೊ");
 
 while (g > -1) {
+if(txt[g-4]==="ರ" && txt[g-3]==="X" && txt[g-2]==="್"){
+txt = txt.slice(0, g - 4) + "e" + txt.slice(g - 4, g) + "a" + txt.slice(g + 1);
+g = txt.indexOf("ೊ"); 
+}else{
 if (txt[g - 4] === "್" && txt[g - 2] === "್") {
 txt = txt.slice(0, g - 5) + "e" + txt.slice(g - 5, g) + "a" + txt.slice(g + 1);
 g = txt.indexOf("ೊ");
@@ -179,11 +188,15 @@ txt = txt.slice(0, g - 1) + "e" + txt.slice(g - 1, g) + "a" + txt.slice(g + 1);
 g = txt.indexOf("ೊ");
 }
 }
-}
+}}
 
 let G = txt.indexOf("ೋ");
 
 while (G > -1) {
+if(txt[G-4]==="ರ" && txt[G -3]==="X" && txt[g-2]==="್"){
+txt = txt.slice(0, G - 4) + "F" + txt.slice(G - 4, G) + "a" + txt.slice(G + 1);
+G = txt.indexOf("ೋ"); 
+}else{
 if (txt[G - 4] === "್" && txt[G - 2] === "್") {
 txt = txt.slice(0, G - 5) + "F" + txt.slice(G - 5, G) + "a" + txt.slice(G + 1);
 G = txt.indexOf("ೋ");
@@ -196,11 +209,15 @@ txt = txt.slice(0, G - 1) + "F" + txt.slice(G - 1, G) + "a" + txt.slice(G + 1);
 G = txt.indexOf("ೋ");
 }
 }
-}
+}}
 
 
 let f = txt.indexOf("ೈ"); 
 while (f > -1) { 
+if(txt[f-4]==="ರ" && txt[f-3]==="X" && txt[f-2]==="್"){
+txt = txt.slice(0, f - 4) + "eXe" + txt.slice(f - 4, f) + txt.slice(f + 1);
+f = txt.indexOf("ೈ"); 
+}else{
 if (txt[f - 4] === "್" && txt[f - 2] === "್") { 
 txt = txt.slice(0, f - 5) + "eXe" + txt.slice(f - 5, f) + txt.slice(f + 1);
 f = txt.indexOf("ೈ"); 
@@ -210,9 +227,9 @@ txt = txt.slice(0, f - 3) + "eXe" + txt.slice(f - 3, f) + txt.slice(f + 1);
 f = txt.indexOf("ೈ"); } else { 
 txt = txt.slice(0, f - 1) + "eXe" + txt[f - 1] + txt.slice(f + 1); 
 f = txt.indexOf("ೈ"); 
-  }
- } 
+}
 } 
+} }
 
 
 
