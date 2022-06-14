@@ -99,18 +99,18 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 
 txt = txt.replace(/್ /g, "್  ");
 txt = txt.replace(/ಕೊೖ/g, "eXeka");
-
+rAX
 let x = txt.indexOf("‍");
 while(x>-1){
-if(txt[x-2]=="ರ್"){
-txt = txt.slice(0,x-1) + "X" + txt[x-1] + txt.slice(x+1);
+if(txt[x-2]==="ರ್"){
+txt = txt.slice(0,x-2) + "ರX್" + txt.slice(x+1);
 x = txt.indexOf("‍");
 }else{
 txt = txt.slice(0,x) + "X" +txt.slice(x+1);
 x = txt.indexOf("‍");
 }
 }
-
+rXAke
 let e = txt.indexOf("ೆ");
 while (e > -1) { 
 if(txt[e-4]==="ರX್"){
