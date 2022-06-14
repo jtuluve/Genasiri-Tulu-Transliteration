@@ -215,7 +215,6 @@ f = txt.indexOf("ೈ");
 } 
 
 
-let i = txt.indexOf("ಿ")
 
 
 
