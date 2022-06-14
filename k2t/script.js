@@ -99,7 +99,7 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 
 txt = txt.replace(/್ /g, "್  ");
 txt = txt.replace(/ಕೊೖ/g, "eXeka");
-rAX
+
 let x = txt.indexOf("‍");
 while(x>-1){
 if(txt[x-2]==="ರ್"){
