@@ -100,8 +100,23 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 txt = txt.replace(/್ /g, "್  ");
 txt = txt.replace(/ಕೊೖ/g, "eXeka");
 
-let e = txt.indexOf("ೆ"); 
+let x = txt.indexOf("‍");
+while(x>-1){
+if(txt[x-2]=="ರ್"){
+txt = txt.slice(0,x-1) + "X" + txt[x-1] + txt.slice(x+1);
+x = txt.indexOf("‍");
+}else{
+txt = txt.slice(0,x) + "X" +txt.slice(x+1);
+x = txt.indexOf("‍");
+}
+}
+
+let e = txt.indexOf("ೆ");
 while (e > -1) { 
+if(txt[e-4]==="ರX್"){
+txt = txt.slice(0, e - 4) + "e" + txt.slice(e - 4, e) + txt.slice(e + 1);
+e = txt.indexOf("ೆ"); 
+}else{
 if (txt[e - 4] === "್" && txt[e - 2] === "್") { 
 txt = txt.slice(0, e - 5) + "e" + txt.slice(e - 5, e) + txt.slice(e + 1);
 e = txt.indexOf("ೆ"); 
@@ -111,9 +126,10 @@ txt = txt.slice(0, e - 3) + "e" + txt.slice(e - 3, e) + txt.slice(e + 1);
 e = txt.indexOf("ೆ"); } else { 
 txt = txt.slice(0, e - 1) + "e" + txt[e - 1] + txt.slice(e + 1); 
 e = txt.indexOf("ೆ"); 
-  }
- } 
+}
 } 
+} 
+}
 
 
 let E = txt.indexOf("ೇ"); 
