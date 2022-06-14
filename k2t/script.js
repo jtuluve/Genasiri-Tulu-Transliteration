@@ -193,7 +193,7 @@ g = txt.indexOf("ೊ");
 let G = txt.indexOf("ೋ");
 
 while (G > -1) {
-if(txt[G-4]==="ರ" && txt[G -3]==="X" && txt[g-2]==="್"){
+if(txt[G-4]==="ರ" && txt[G -3]==="X" && txt[G-2]==="್"){
 txt = txt.slice(0, G - 4) + "F" + txt.slice(G - 4, G) + "a" + txt.slice(G + 1);
 G = txt.indexOf("ೋ"); 
 }else{
