@@ -94,7 +94,7 @@ j = txt.indexOf("ೆV");
 let J = txt.indexOf("ೇV"); 
 while (J > -1) { 
 if(txt[J-4]==="ರ" && txt[J-3]==="X" && txt[J-2]==="್"){
-txt = txt.slice(0, J - 4) + "e" + txt.slice(J - 4, J) + txt.slice(J + 2);
+txt = txt.slice(0, J - 4) + "O" + txt.slice(J - 4, J) + txt.slice(J + 2);
 J = txt.indexOf("ೇV"); 
 }else{
 if (txt[J - 4] === "್" && txt[J - 2] === "್") { 
