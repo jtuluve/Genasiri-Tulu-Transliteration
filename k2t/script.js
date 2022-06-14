@@ -102,7 +102,7 @@ txt = txt.replace(/ಕೊೖ/g, "eXeka");
 
 let x = txt.indexOf("‍");
 while(x>-1){
-if(txt[x-2]==="ರ್"){
+if(txt[x-2]==="ರ" && txt[x-1]==="್"){
 txt = txt.slice(0,x-2) + "ರX್" + txt.slice(x+1);
 x = txt.indexOf("‍");
 }else{
