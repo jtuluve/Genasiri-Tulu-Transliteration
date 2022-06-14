@@ -55,6 +55,16 @@ document.getElementById("txt").addEventListener("input", myfunc);
 function myfunc(){
 
 let txt = document.getElementById("txt").value; 
+let x = txt.indexOf("‍");
+while(x>-1){
+if(txt[x-2]==="ರ" && txt[x-1]==="್"){
+txt = txt.slice(0,x-2) + "ರX್" + txt.slice(x+1);
+x = txt.indexOf("‍");
+}else{
+txt = txt.slice(0,x) + "X" + txt.slice(x+1);
+x = txt.indexOf("‍");
+}
+}
 
 let sp = document.getElementById("spcl");
 if (sp.checked == true){
@@ -108,16 +118,6 @@ txt = txt.replace(/ಎV/g, "oA").replace(/ಏV/g, "OA").replace(/ುV/g, "uAX");
 txt = txt.replace(/್ /g, "್  ");
 txt = txt.replace(/ಕೊೖ/g, "eXeka");
 
-let x = txt.indexOf("‍");
-while(x>-1){
-if(txt[x-2]==="ರ" && txt[x-1]==="್"){
-txt = txt.slice(0,x-2) + "ರX್" + txt.slice(x+1);
-x = txt.indexOf("‍");
-}else{
-txt = txt.slice(0,x) + "X" + txt.slice(x+1);
-x = txt.indexOf("‍");
-}
-}
 
 
 let e = txt.indexOf("ೆ");
