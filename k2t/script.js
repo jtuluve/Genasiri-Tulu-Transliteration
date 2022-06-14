@@ -113,7 +113,7 @@ x = txt.indexOf("‍");
 
 let e = txt.indexOf("ೆ");
 while (e > -1) { 
-if(txt[e-4]==="ರX್"){
+if(txt[e-4]==="ರ" && txt[e-2]==="X" && txt[e-3]==="್"){
 txt = txt.slice(0, e - 4) + "e" + txt.slice(e - 4, e) + txt.slice(e + 1);
 e = txt.indexOf("ೆ"); 
 }else{
