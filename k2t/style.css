@@ -87,7 +87,7 @@ width: 14px;
 /*errors page*/
 
 .err h3:after {
-  content : "";
+  content : " ";
   position : relative;
   background-width : 100%;
   background-height : 3px;
