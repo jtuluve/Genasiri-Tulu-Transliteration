@@ -86,7 +86,7 @@ width: 14px;
 
 /*errors page*/
 
-.err h3:after {
+.err h3{
   border-bottom: 3px solid yellow;
   border-width: 100% 0;
 }   
