@@ -88,9 +88,10 @@ width: 14px;
 
 .err h3{
   border-bottom: 3px solid #008080;
-  border-width: 90% 0;
+  border-width: 80% 0;
   padding-left: 5px;
 }   
 .err p{
   padding:0px 10px;
+  text-align:justify;
 }
