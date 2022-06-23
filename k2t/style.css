@@ -87,10 +87,6 @@ width: 14px;
 /*errors page*/
 
 .err h3:after {
-  content : " ";
-  position : relative;
-  background-width : 100%;
-  background-height : 3px;
-  background-color: #248eff;
-  left:0;
+  border-bottom: 3px solid yellow;
+  border-width: 100% 0;
 }   
