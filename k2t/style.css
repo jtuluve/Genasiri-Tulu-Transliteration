@@ -94,4 +94,5 @@ width: 14px;
   background-color: #248eff;
   bottom: 0; 
   left: 0;
+  z-index:2;
 }   
