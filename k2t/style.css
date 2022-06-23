@@ -89,4 +89,5 @@ width: 14px;
 .err h3{
   border-bottom: 3px solid yellow;
   border-width: 100% 0;
+  margin-left: 5px;
 }   
