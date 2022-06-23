@@ -90,10 +90,9 @@ width: 14px;
   border-bottom: 3px solid #008080;
   display:inline;
   padding-left: 5px;
-  background-width:80%;
-  
+  width:80%;
 }   
 .err p{
-  padding:0px 10px;
+  padding:15px;
   text-align:justify;
 }
