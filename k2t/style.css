@@ -97,3 +97,13 @@ width: 14px;
   text-align:justify;
   margin-top: 15px;
 }
+.err-btn{
+  border: 5px solid black;
+  padding: 5px 10px;
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  position: absolute;
+  text-align: center;
+  right: 10px; 
+  text-decoration: none;
+}
