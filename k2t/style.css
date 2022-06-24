@@ -140,7 +140,7 @@ color:red;
 }
 
 /* form */
-input[type=text], select, textarea {
+.container input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -148,12 +148,12 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-label {
+.container label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
-input[type=submit] {
+.container input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -164,7 +164,7 @@ input[type=submit] {
   margin:5px;
 }
 
-input[type=submit]:hover {
+.container input[type=submit]:hover {
   background-color: #45a049;
 }
 
