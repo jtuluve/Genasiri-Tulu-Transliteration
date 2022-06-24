@@ -133,5 +133,7 @@ color:green;
 .err-btn2:hover{
   background-image:none;
   background: white;
-  color:red;
+}
+.err-btn2:hover span{
+color:red;
 }
