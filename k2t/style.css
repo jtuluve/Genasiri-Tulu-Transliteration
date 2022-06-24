@@ -101,7 +101,7 @@ width: 14px;
   border: 2px solid black;
   background-color: #7ee8fa;
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-  position: relative;
+  position: absolute;
   display:inline-block;
   text-align: center; 
   right:0;
