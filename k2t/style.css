@@ -174,10 +174,12 @@ input[type=submit]:hover {
 
 .col-25 {
   margin-top: 6px;
+  margin-left:6px;
 }
 
 .col-75 {
   margin-top: 6px;
+  margin-left:6px;
 }
 
 
