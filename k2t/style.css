@@ -123,3 +123,13 @@ width: 14px;
   padding:4px 20px;
   letter-spacing:1px;
 }
+.err-btn:hover{
+  background-image:none;
+  background: white;
+  color:green;
+}
+.err-btn:hover{
+  background-image:none;
+  background: white;
+  color:red;
+}
