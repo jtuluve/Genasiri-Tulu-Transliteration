@@ -107,6 +107,19 @@ width: 14px;
   right:0;
   text-decoration: none;
   border-radius:20px;
-  padding:5px 20px;
+  padding:4px 20px;
+  letter-spacing:1px;
+}
+.err-btn2{
+  border: 2px solid black;
+  background: #DD6449;
+  background-image: linear-gradient(to bottom right, #DD6449, #CE0D17);
+  position: relative;
+  display:inline-block;
+  text-align: center; 
+  right:0;
+  text-decoration: none;
+  border-radius:20px;
+  padding:4px 20px;
   letter-spacing:1px;
 }
