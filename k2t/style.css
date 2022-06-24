@@ -102,7 +102,7 @@ width: 14px;
   padding: 5px 10px;
   background-color: #7ee8fa;
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-  position: absolute;
+  position: relative;
   text-align: center;
   right: 10px; 
   text-decoration: none;
