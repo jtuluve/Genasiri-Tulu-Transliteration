@@ -98,12 +98,14 @@ width: 14px;
   margin-top: 15px;
 }
 .err-btn{
-  border: 5px solid black;
-  padding: 5px 10px;
+  border: 2px solid black;
+
+  padding:10px;
   background-color: #7ee8fa;
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
   position: relative;
   text-align: center;
   right: 10px; 
   text-decoration: none;
+  border-radius:5px;
 }
