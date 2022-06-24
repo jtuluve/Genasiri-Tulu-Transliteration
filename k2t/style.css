@@ -169,17 +169,14 @@ input[type=submit]:hover {
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 20px;
-  width: 80%;
   margin: auto;
 }
 
 .col-25 {
-  width: 25%;
   margin-top: 6px;
 }
 
 .col-75 {
-  width: 75%;
   margin-top: 6px;
 }
 
