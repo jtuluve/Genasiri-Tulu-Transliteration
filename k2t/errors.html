@@ -71,7 +71,7 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
         <label for="name">Name:</label><br>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
       </div>
     </div>
     <div class="row">
@@ -79,8 +79,8 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
         <label for="country">Country</label><br>
       </div><br>
       <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
+        <select id="country" name="country" required>
+          <option value="none" disabled selected value>Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
