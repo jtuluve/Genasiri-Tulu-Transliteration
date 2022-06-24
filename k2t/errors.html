@@ -65,36 +65,44 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 </div>
 
 <div class="container" style="width:80%;">
-  <form action="https://formsubmit.co/aaf0fb049b489fba083d0dc0bfc8df43" method="POST" style="width:90%;align:center;margin:auto;">
+  <form action="https://formsubmit.co/aaf0fb049b489fba083d0dc0bfc8df43" method="POST" data-toggle="validator" style="width:90%;align:center;margin:auto;">
     <div class="row">
       <div class="col-25">
         <label for="name">Name:</label><br>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
       </div>
     </div>
-    <div class="row">
+   <div class="row">
       <div class="col-25">
-        <label for="country">Country</label><br>
+        <label for="email">Your email address:</label><br>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Email address.." required>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="err-km">Converter in which you found the error:</label><br>
       </div><br>
       <div class="col-75">
-        <select id="country" name="country" required>
-          <option value="none" disabled selected value>Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+        <select id="err-km" name="found-in" required>
+          <option value="" disabled selected value></option>
+          <option value="k2t">Kannada to Tulu</option>
+          <option value="m2t">Malayalam to Tulu</option>
         </select>
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Subject</label>
+        <label for="explain">Explain error with example:</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="explain" name="explain" placeholder="Explain with example.." style="height:200px"></textarea>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="align-items:center;">
       <input type="submit" value="Submit">
     </div>
   </form>
