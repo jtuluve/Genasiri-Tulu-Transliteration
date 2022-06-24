@@ -140,7 +140,7 @@ color:red;
 }
 
 /* form */
-.container input[type=text], select, textarea {
+.container input[type=text], .container select, .container textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
