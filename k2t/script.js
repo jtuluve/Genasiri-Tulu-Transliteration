@@ -303,8 +303,10 @@ function copy() {
 function err1(){
 document.getElementById("err1").style.display="none";
 document.getElementById("err2").style.display="inline-block";
+document.getElementById("err-form").style.display="block";
 }
 function err2(){
 document.getElementById("err1").style.display="inline-block";
 document.getElementById("err2").style.display="none";
+document.getElementById("err-form").style.display="none";
 }
