@@ -127,7 +127,7 @@ width: 14px;
   background-image:none;
   background: white;
 }
-.err-btn span:hover{
+.err-btn:hover span{
 color:green;
 }
 .err-btn2:hover{
