@@ -30,7 +30,7 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white; position:relative;top:-10px;">
-<a class="navbar-brand" href="https://jaitulunad.com">
+<a class="navbar-brand" href="https://www.jaitulunad.com">
 <img src="./k2t/images/jtlogo.png" oncontextmenu="return false;" style="height: 60px; width: auto;">
 </a>
 
@@ -42,13 +42,16 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
   <div class="collapse navbar-collapse" id="navbarNav">
      <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="./">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="./">Kannada To Tulu<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="https://www.jaitulunad.com/">Jai Tulunad</a>
+        <a style="color:gray;" class="nav-link" href="#">Malayalam To Tulu</a>
       </li>
       <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="./k2t/errors">Report Errors</a>
+        <a style="color:gray;" class="nav-link" href="#">Jai Tulunad</a>
+      </li>
+      <li class="nav-item">
+        <a style="color:gray;" class="nav-link" href="#">Report Errors</a>
       </li>
     </ul>
   </div>
@@ -86,6 +89,12 @@ If you need to change the text written in Kannada to Tulu, write in the space be
 </div>
 
 <div style="background-color:black; background-width: 100%;">
+<label><span style="color:white;">transcript from:</span>
+<select name="fromlang" id="fromlang" style="font-size:70%; margin-top: 10px;">
+  <option value="kannada">Kannada</option>
+  <option value="malayalam">Malayalam</option>
+</select>
+</label><br>
 <label style="font-size:70%;">
 <input type="checkbox" id="spcl" class="spcl" name="spcl" onclick="myfunc()" style="align: bottom; bottom: 0;"/>
 <span style="color:white;">Enable special charcters</span>
@@ -100,7 +109,7 @@ If you need to change the text written in Kannada to Tulu, write in the space be
 <div id="uvw"><textarea type="text" class="txt" id="txt" placeholder="type in kannada" style="background-color:white;"></textarea></div>
 <div><textarea type="text" class="resu" id="resu" placeholder="tululipiqA" style="font-family: tulu; background-color:white;" readonly></textarea></div><br>
 </div>
-<button onclick="copy()">copy</button>
+<button onclick="copy(); copyAlert()">copy</button>
 <div  style="margin-left: 15px;">
 <p id="englang2" style="display: block;"> To enable special charcters of tulu language
 use <span class="darkblue">"V"</span> after special character. Ex: <br>
@@ -125,10 +134,24 @@ viESx AAecAcaeraelnA gleser viESx AAecAcaerad eAduru "V" berel.
 </p>
 
 </div>
+<p style="font-size:80%; margin-left: 3px;">If you find any error <a href="mailto:jtuluve@gmail.com" style="text-decoration: none;">email me</a></p>
 <div  style="position: fixed; right: 5px; bottom: 5px; text-align: right; align-items: right;">
 <a href="#" style="text-decoration:none;"><i class="bi bi-arrow-up-circle-fill" style="color: black;"></i></a>
 </div>
       <script src="./k2t/script.js"></script>
+      <script src="./m2t/script.js"></script>
+      
+     <script>
+     				document.getElementById("txt").addEventListener("input", fromlang);	document.getElementById("fromlang").addEventListener("change", fromlang);
+    function fromlang(){
+     				let fromlang = document.getElementById("fromlang").value;
+    				if(fromlang == "kannada") {
+    						kanfunc();	}else {
+    			malfunc();
+    				}
+    }
+
+     </script>
   </body>
 </html>
 
