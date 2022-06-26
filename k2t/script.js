@@ -51,8 +51,7 @@ document.getElementById("resu").style.fontFamily="";
 }
 }
 
-document.getElementById("txt").addEventListener("input", myfunc);
-function myfunc(){
+function kanfunc(){
 
 let txt = document.getElementById("txt").value; 
 let x = txt.indexOf("‍");
