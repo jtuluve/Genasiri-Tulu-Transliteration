@@ -5,8 +5,8 @@ function malfunc(){
 let txt = document.getElementById("txt").value; 
 let x = txt.indexOf("‍");
 while(x>-1){
-if(txt[x-2]==="ರ" && txt[x-1]==="್"){
-txt = txt.slice(0,x-2) + "ರX್" + txt.slice(x+1);
+if(txt[x-2]==="ര" && txt[x-1]==="്"){
+txt = txt.slice(0,x-2) + "രX്" + txt.slice(x+1);
 x = txt.indexOf("‍");
 }else{
 txt = txt.slice(0,x) + "X" + txt.slice(x+1);
