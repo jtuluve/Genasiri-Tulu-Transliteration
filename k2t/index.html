@@ -4,12 +4,12 @@
   
 
     <title>ಕನ್ನಡ script to tulu script converter</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./k2t/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./k2t/images/favicon.ico" />
   
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -30,11 +30,11 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white; position:relative;top:-10px;">
-<a class="navbar-brand" href="https://jaitulunad.com">
-<img src="./images/jtlogo.png" oncontextmenu="return false;" style="height: 60px; width: auto;">
+<a class="navbar-brand" href="https://www.jaitulunad.com">
+<img src="./k2t/images/jtlogo.png" oncontextmenu="return false;" style="height: 60px; width: auto;">
 </a>
 
-<img src="./images/k2tlogo.png" oncontextmenu="return false;" style="height: 60px; margin:-20px;">
+<img src="./k2t/images/k2tlogo.png" oncontextmenu="return false;" style="height: 60px; margin:-20px;">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border:2px solid black;">
     <span class="navbar-toggler-icon" style="font-size:70%;"></span>
@@ -65,7 +65,7 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 <div style="margin-top: -15px; margin-bottom:-15px; align-items: center; background-color: maroon; width: 100%;">
 </div>
 <div style="font-size:70%;" class="alert alert-danger" role="alert">
-  Please note that accuracy rate of this converter is 98%. We are working to make it better. Help us by <a href="./errors" style="text-decoration: none;">reporting errors</a> found in the converter.
+  Please note that accuracy rate of this converter is 98%. We are working to make it better. Help us by <a href="./k2t/errors" style="text-decoration: none;">reporting errors</a> found in the converter.
 </div>
 
 <p style="display:inline; color:white; font-size:70%; margin-top:10px; margin-left: 3px;">description language:</p>
@@ -89,6 +89,12 @@ If you need to change the text written in Kannada to Tulu, write in the space be
 </div>
 
 <div style="background-color:black; background-width: 100%;">
+<label><span style="color:white;">transcript from:</span>
+<select name="fromlang" id="fromlang" style="font-size:70%; margin-top: 10px;">
+  <option value="kannada">Kannada</option>
+  <option value="malayalam">Malayalam</option>
+</select>
+</label><br>
 <label style="font-size:70%;">
 <input type="checkbox" id="spcl" class="spcl" name="spcl" onclick="myfunc()" style="align: bottom; bottom: 0;"/>
 <span style="color:white;">Enable special charcters</span>
@@ -132,7 +138,20 @@ viESx AAecAcaeraelnA gleser viESx AAecAcaerad eAduru "V" berel.
 <div  style="position: fixed; right: 5px; bottom: 5px; text-align: right; align-items: right;">
 <a href="#" style="text-decoration:none;"><i class="bi bi-arrow-up-circle-fill" style="color: black;"></i></a>
 </div>
-      <script src="script.js"></script>
+      <script src="./k2t/script.js"></script>
+      <script src="./m2t/script.js"></script>
+      
+     <script>
+     				document.getElementById("txt").addEventListener("input", fromlang);	document.getElementById("fromlang").addEventListener("change", fromlang);
+    function fromlang(){
+     				let fromlang = document.getElementById("fromlang").value;
+    				if(fromlang == "kannada") {
+    						kanfunc();	}else {
+    			malfunc();
+    				}
+    }
+
+     </script>
   </body>
 </html>
 
