@@ -1,5 +1,5 @@
 document.getElementById("lang").addEventListener("change", lang);
-
+document.getElementById("fromlang").addEventListener("input", lang);
 function lang(){
 let lang = document.getElementById("lang").value;
 
@@ -11,8 +11,13 @@ document.getElementById("tululang").style.display = "none";
 document.getElementById("tululang2").style.display = "none";
 document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
+if(document.getElementById("fromlang").value == "kannada") {
+				
 
 document.getElementById("txt").placeholder = "type in kannada";
+}else if(document.getElementById("fromlang").value == "malayalam"){
+				document.getElementById("txt").placeholder = "type in malayalam";
+}
 document.getElementById("txt").style.fontFamily="";
 
 }else if (lang == "tulu"){
@@ -23,8 +28,11 @@ document.getElementById("tululang").style.display = "block";
 document.getElementById("tululang2").style.display = "block";
 document.getElementById("kanlang").style.display = "none";
 document.getElementById("kanlang2").style.display = "none";
-
+if(document.getElementById("fromlang").value == "kannada"){
 document.getElementById("txt").placeholder = "knAnwwA  berel";
+}else if(document.getElementById("fromlang").value == "malayalam"){
+	document.getElementById("txt").placeholder = "mlyaLMwA  berel";
+}
 document.getElementById("txt").style.fontFamily="tulu2";
 
 }else if(lang == "kannada"){
@@ -35,8 +43,11 @@ document.getElementById("tululang").style.display = "none";
 document.getElementById("tululang2").style.display = "none";
 document.getElementById("kanlang").style.display = "block";
 document.getElementById("kanlang2").style.display = "block";
-
+if(document.getElementById("fromlang").value == "kannada"){
 document.getElementById("txt").placeholder = "ಕನ್ನಡದಲ್ಲಿ ಬರೆಯಿರಿ";
+}else if(document.getElementById("fromlang").value == "malayalam"){
+				document.getElementById("txt").placeholder = "ಮಲಯಾಳಂನಲ್ಲಿ ಬರೆಯಿರಿ";
+}
 document.getElementById("txt").style.fontFamily="";
 
 }
