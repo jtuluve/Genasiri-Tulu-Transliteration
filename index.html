@@ -111,7 +111,7 @@ If you need to change the text written in Kannada to Tulu, write in the space be
 <div id="uvw"><textarea type="text" class="txt" id="txt" placeholder="type in kannada" style="background-color:white;"></textarea></div>
 <div><textarea type="text" class="resu" id="resu" placeholder="tululipiqA" style="font-family: tulu; background-color:white;" readonly></textarea></div><br>
 </div>
-<button onclick="copy(); copyAlert()">copy</button>
+<button onclick="copy()">copy</button>
 <div  style="margin-left: 15px;">
 <p id="englang2" style="display: block;"> To enable special charcters of tulu language
 use <span class="darkblue">"V"</span> after special character. Ex: <br>
@@ -152,6 +152,22 @@ viESx AAecAcaeraelnA gleser viESx AAecAcaerad eAduru "V" berel.
     			malfunc();
     				}
     }
+    
+function copy() {
+  /* Get the text field */
+  var copyText = document.getElementById("resu");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value.replace(/A  /g, "A "));
+  
+  /* Alert the copied text */
+  alert("Copied the text");
+}
+
 
      </script>
   </body>
