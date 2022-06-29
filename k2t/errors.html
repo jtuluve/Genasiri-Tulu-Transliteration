@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw" />
+    <meta property="og:image" content="./images/jtlogo.png" />
+ <meta name="google-site-verification" content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-  <script src="./script.js"></script>
+  <script>
+
+/* error page script */
+
+function err1(){
+document.getElementById("err1").style.display="none";
+document.getElementById("err2").style.display="inline-block";
+document.getElementById("err-form").style.display="block";
+}
+function err2(){
+document.getElementById("err1").style.display="inline-block";
+document.getElementById("err2").style.display="none";
+document.getElementById("err-form").style.display="none";
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -29,7 +44,7 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white; position:relative;top:-10px;">
-<a class="navbar-brand" href="https://jaitulunad.com">
+<a class="navbar-brand" href="https://www.jaitulunad.com">
 <img src="./images/jtlogo.png" oncontextmenu="return false;" style="height: 60px; width: auto;">
 </a>
 
@@ -39,18 +54,18 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
     <span class="navbar-toggler-icon" style="font-size:70%;"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="./">Kannada To Tulu<span class="sr-only">(current)</span></a>
+        <a style="color:gray;" class="nav-link" href="https://jaitulunad.in">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="#">Malayalam To Tulu</a>
+        <a style="color:gray;" class="nav-link" href="../">Transcripter</a>
       </li>
       <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="#">Jai Tulunad</a>
+        <a style="color:gray;" class="nav-link" href="https://www.jaitulunad.com">Jai Tulunad</a>
       </li>
       <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="#">Report Errors</a>
+        <a style="color:black;" class="nav-link" href="./reports">Report Errors</a>
       </li>
     </ul>
   </div>
@@ -114,7 +129,9 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
 </div>
 
 </div>
-
+<div style="height:100vh; background-color:#b2b2b2;width:100%;display: flex;align-items: center; justify-content: center;">
+				<p style="color:#8b8b8b;width:70%; position:absolute; text-align:center;font-weight:bold;">we are good to go..<br>No errors reported yet..🥳</p>
+</div>
  
 
 </body>
