@@ -53,14 +53,7 @@ document.getElementById("txt").style.fontFamily="";
 }
 }
 
-function tulu(){
-let tl = document.getElementById("tl");
-if(tl.checked == true){
-document.getElementById("resu").style.fontFamily="tulu";
-}else{
-document.getElementById("resu").style.fontFamily="";
-}
-}
+
 
 function kanfunc(){
 
@@ -306,17 +299,3 @@ function copy() {
 
 
 
-
-
-/* error page script */
-
-function err1(){
-document.getElementById("err1").style.display="none";
-document.getElementById("err2").style.display="inline-block";
-document.getElementById("err-form").style.display="block";
-}
-function err2(){
-document.getElementById("err1").style.display="inline-block";
-document.getElementById("err2").style.display="none";
-document.getElementById("err-form").style.display="none";
-}
