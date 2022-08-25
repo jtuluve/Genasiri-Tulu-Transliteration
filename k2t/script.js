@@ -227,7 +227,7 @@ let rep = txt.replace(/ಅ/g, "XAA").replace(/ಆ/g, "XAa").replace(/ಇ/g, "XAi
 
 
 /* error manager*/
-rep = rep.replace(/fA/g, "Af");
+rep = rep.replace(/fA/g, "fXA");
 
 
 
@@ -409,7 +409,7 @@ rep = rep.replace(/റ/g,"xxrhaxx").replace(/ഴ/g,"xxzhaxx").replace(/ർ/g, "r
 
 
 
-rep = rep.replace(/fA/g, "Af");
+rep = rep.replace(/fA/g, "fXA");
 
 
 
