@@ -227,9 +227,18 @@ let rep = txt.replace(/ಅ/g, "XAA").replace(/ಆ/g, "XAa").replace(/ಇ/g, "XAi
 
 
 /* error manager*/
-rep = rep.replace(/fA/g, "fXA");
+let fa = rep.indexOf("fA")
+while(fa>-1){
 
 
+if(/k|K|g|G|Z|c|C|j|J|z|q|Q|w|W|N|t|T|d|D|n|p|P|b|B|m|y|l|v|S|x|s|h|L/.test(rep[fa+3]) && rep[fa+2] !== "\n" && fa+2 !== rep.length){
+
+rep = rep.slice(0, fa) + "fXA" + rep.slice(fa+2);
+
+}
+
+fa = rep.indexOf("fA", fa+3);
+}
 
 document.getElementById("resu").value = rep;
 }
