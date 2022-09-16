@@ -232,7 +232,7 @@ let fa = rep.indexOf("fA")
 while(fa>-1){
 
 
-if(/k|K|g|G|Z|c|C|j|J|z|q|Q|w|W|N|t|T|d|D|n|p|P|b|B|m|y|l|v|S|x|s|h|L/.test(rep[fa+3]) && rep[fa+2] !== "\n" && fa+2 !== rep.length){
+if(/k|K|g|G|Z|c|C|j|J|z|q|Q|w|W|N|t|T|d|D|n|p|P|b|B|m|y|l|v|S|x|s|h|L/.test(rep[fa+2]) && rep[fa+2] !== "\n" && fa+2 !== (rep.length-1)){
 
 rep = rep.slice(0, fa) + "fXA" + rep.slice(fa+2);
 
