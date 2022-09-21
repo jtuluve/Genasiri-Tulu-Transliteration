@@ -223,6 +223,23 @@ lgt = txt.length;
 
 let rep = txt.replace(/അ/g, "XAA").replace(/ആ/g, "XAa").replace(/ഇ/g, "XAi").replace(/ഈ/g, "XAI").replace(/ഉ/g, "XAu").replace(/ഊ/g, "XAU").replace(/ഋ/g, "XAR").replace(/ൠ/g, "XARR").replace(/ൄ/g, "RR").replace(/എ/g, "eA").replace(/ഏ/g, "EA").replace(/ഐ/g, "eeA").replace(/ഒ/g, "eAa").replace(/ഓ/g, "FAa").replace(/ഔ/g, "AY").replace(/ൗ/g, "Y").replace(/ം/g, "M").replace(/ഃ/g, "H").replace(/ക/g, "k").replace(/ഖ/g, "K").replace(/ഗ/g, "g").replace(/ഘ/g, "G").replace(/ങ/g, "Z").replace(/ച/g, "c").replace(/ഛ/g, "C").replace(/ജ/g, "j").replace(/ഝ/g, "J").replace(/ഞ/g, "z").replace(/ട/g, "q").replace(/ഠ/g, "Q").replace(/ഡ/g, "w").replace(/ഢ/g, "W").replace(/ണ/g, "N").replace(/ത/g, "t").replace(/ഥ/g, "T").replace(/ദ/g, "d").replace(/ധ/g, "D").replace(/ന/g, "n").replace(/പ/g, "p").replace(/ഫ/g, "P").replace(/ബ/g, "b").replace(/ഭ/g, "B").replace(/മ/g, "m").replace(/യ/g, "y").replace(/ര/g, "r").replace(/ല/g, "l").replace(/വ/g, "v").replace(/ശ/g, "S").replace(/ഷ/g, "x").replace(/സ/g, "s").replace(/ഹ/g, "h").replace(/ള/g, "L").replace(/്/g, "A").replace(/ാ/g, "a").replace(/ു/g, "u").replace(/ൂ/g, "U").replace(/ൈ/g, "Y").replace(/ി/g, "i").replace(/ീ/g, "I").replace(/ൃ/g, "R").replace(/‍/g, "X").replace(/‌/g, "X"); 
 rep = rep.replace(/eXee/g, "eXe");
+
+
+let fa = rep.indexOf("fA")
+while(fa>-1){
+
+var tt = ["k", "K", "g", "G", "Z", "c", "C", "j", "J", "z", "q", "Q", "w", "W", "N", "t", "T", "d", "D", "n", "p", "P", "b", "B", "m", "y", "r", "l", "v", "S", "x", "s", "h", "L"]
+
+if(tt.includes(rep[fa+2])){
+
+rep = rep.slice(0, fa) + "fXA" + rep.slice(fa+2);
+
+}
+
+fa = rep.indexOf("fA", fa+2);
+}
+
+
 document.getElementById("resu").value = rep;
 }
 
