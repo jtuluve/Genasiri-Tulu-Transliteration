@@ -421,6 +421,10 @@ rep = rep.replace(/റ/g,"xxrhaxx").replace(/ഴ/g,"xxzhaxx").replace(/ർ/g, "r
 let fa = rep.indexOf("fA")
 while(fa>-1){
 
+
+let fa = rep.indexOf("fA")
+while(fa>-1){
+
 var tt = ["k", "K", "g", "G", "Z", "c", "C", "j", "J", "z", "q", "Q", "w", "W", "N", "t", "T", "d", "D", "n", "p", "P", "b", "B", "m", "y", "r", "l", "v", "S", "x", "s", "h", "L"]
 
 if(tt.includes(rep[fa+2])){
@@ -431,6 +435,7 @@ rep = rep.slice(0, fa) + "fXA" + rep.slice(fa+2);
 
 fa = rep.indexOf("fA", fa+2);
 }
+
 
 
 
