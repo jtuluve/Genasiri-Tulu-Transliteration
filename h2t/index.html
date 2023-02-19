@@ -74,15 +74,18 @@ $(window).on("load",function(){ $(".loading").fadeOut("slow"); });
   <option value="kannada">kannada</option>
 </select>
 <div style="padding: 8px;">
+ <p id="kanlang" style="color: white; display:none;">
+
+</p>
 <p id="kanlang" style="color: white; display:none;">
-ಕನ್ನಡದಲ್ಲಿ ಬರೆದ ಪಠ್ಯವನ್ನು ತುಳುವಿಗೆ ಬದಲಾಯಿಸಬೇಕಿದ್ದರೆ ಕೆಳಗೆ ಇರುವ ಜಾಗದಲ್ಲಿ ಬರೆಯಿರಿ.
-ಏನಾದರೂ ಸಮಸ್ಯೆ ಇದ್ದರೆ ಸಂಘಟನೆಯ ಈಮೈಲ್ ವಿಳಾಸಕ್ಕೆ ಸಂದೇಶ ಕಳುಹಿಸಿ.
+यदि आप हिंदी में लिखे गए पाठ को तुलु में बदलना चाहते हैं, तो नीचे दी गई जगह में लिखें।
+यदि कोई समस्या हो तो संगठन के ईमेल पते पर संदेश भेजें।
 </p>
 <p id="tululang" style="color: white; display: none; font-family: tulu;">
-knAnwwA&nbsp;&nbsp;bertin pedaelnA&nbsp;&nbsp;tulukA&nbsp;&nbsp;bdlieser titfA&nbsp;&nbsp;ekatfin jaegwA&nbsp;&nbsp;berel. dal etaMdor AitAtAMw sMgd AIXeXemlAXgA&nbsp;&nbsp;esalAlMj mlApuel
+  hiMdiwA&nbsp;&nbsp;bertin pedaelnA&nbsp;&nbsp;tulukA&nbsp;&nbsp;bdlieser titfA&nbsp;&nbsp;ekatfin jaegwA&nbsp;&nbsp;berel. dal etaMdor AitAtAMw sMgd AIXeXemlAXgA&nbsp;&nbsp;esalAlMj mlApuel
 </p>
 <p id="englang" style="color: white; display: block; font-size: 85%;">
-If you need to change the text written in Kannada to Tulu, write in the space below. If you have any queries please email us.
+If you need to change the text written in Hindi to Tulu, write in the space below. If you have any queries please email us.
 </p>
 <a style="color: white; font-size: 85%; margin-bottom: 10px;" href="mailto:jaitulunadofficial@gmail.com">(jaitulunadofficial@gmail.com)</a>
 </div>
@@ -99,31 +102,31 @@ If you need to change the text written in Kannada to Tulu, write in the space be
 </div>
 </div>
 <div class="main">
-<div id="uvw"><textarea type="text" class="txt" id="txt" placeholder="type in kannada" style="background-color:white;"></textarea></div>
+<div id="uvw"><textarea type="text" class="txt" id="txt" placeholder="type in hindi" style="background-color:white;"></textarea></div>
 <div><textarea type="text" class="resu" id="resu" placeholder="tululipiqA" style="font-family: tulu; background-color:white;" readonly></textarea></div><br>
 </div>
 <button onclick="copy(); copyAlert()">copy</button>
 <div  style="margin-left: 15px;">
 <p id="englang2" style="display: block;"> To enable special charcters of tulu language
-use <span class="darkblue">"V"</span> after special character. Ex: <br>
-1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> returns <span class="darkblue tulu">"mlApuov"</span> and <span class="darkblue">"ಮಲ್ಪುವೇV"</span> returns <span class="darkblue tulu">"mlApuOv"</span><br>
-2. <span class="darkblue">"ಎV"</span> returns <span class="darkblue tulu">"oA"</span> and <span class="darkblue">"ಏV"</span> returns <span class="darkblue tulu">"OA"</span><br>
-3. <span class="darkblue">"ಕುV"</span> returns <span class="darkblue tulu">"kuA"</span>
+use <span class="darkblue">"*"</span> after special character. Ex: <br>
+1. <span class="darkblue">"मल्पुवॆ*"</span> returns <span class="darkblue tulu">"mlApuov"</span> and <span class="darkblue">"मल्पुवे*"</span> returns <span class="darkblue tulu">"mlApuOv"</span><br>
+2. <span class="darkblue">"ऎ*"</span> returns <span class="darkblue tulu">"oA"</span> and <span class="darkblue">"ए*"</span> returns <span class="darkblue tulu">"OA"</span><br>
+3. <span class="darkblue">"कु*"</span> returns <span class="darkblue tulu">"kuA"</span>
 </p>
 
 
 <p id="kanlang2" style="display: none;">
-ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ವಿಶೇಷ ಅಕ್ಷರದ ನಂತರ "V" ಬಳಸಿ. ಉದಾ: <br>
-1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuov"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"ಮಲ್ಪುವೇV"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuOv"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
-<br>2. <span class="darkblue">"ಎV"</span> ಬರೆದರೆ <span class="darkblue tulu">"oA"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"ಏV"</span> ಬರೆದರೆ <span class="darkblue tulu">"OA"</span> ‍ಹಿಂತಿರುಗಿಸುತ್ತದೆ.<br>
-3. <span class="darkblue">"ಕುV"</span> ಬರೆದರೆ <span class="darkblue tulu">"kuA"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ
+ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ವಿಶೇಷ ಅಕ್ಷರದ ನಂತರ "*" ಬಳಸಿ. ಉದಾ: <br>
+1. <span class="darkblue">"मल्पुवॆ*"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuov"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"मल्पुवे*"</span> ಬರೆದರೆ <span class="darkblue tulu">"mlApuOv"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+<br>2. <span class="darkblue">"ऎ*"</span> ಬರೆದರೆ <span class="darkblue tulu">"oA"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ ಮತ್ತು <span class="darkblue">"ए*"</span> ಬರೆದರೆ <span class="darkblue tulu">"OA"</span> ‍ಹಿಂತಿರುಗಿಸುತ್ತದೆ.<br>
+3. <span class="darkblue">"कु*"</span> ಬರೆದರೆ <span class="darkblue tulu">"kuA"</span> ಹಿಂತಿರುಗಿಸುತ್ತದೆ
 </p>
 
 <p id="tululang2" style="font-family: tulu; display: none;">
 viESx AAecAcaeraelnA gleser viESx AAecAcaerad eAduru "V" berel. 
-<br>1. <span class="darkblue">"ಮಲ್ಪುವೆV"</span> berMw <span class="darkblue">"mlApuov"</span> bpfuMwu ebak <span class="darkblue">"ಮಲ್ಪುವೇV"</span> berMw <span class="darkblue">"mlApuOv"</span> bpfuMwu.
-<br>2. <span class="darkblue">"ಎV"</span> berMw <span class="darkblue">"oA"</span> bpfuMwu ebak <span class="darkblue">"ಏV"</span> berMw <span class="darkblue">"OA"</span> bpfuMwu.<br>
-3. <span class="darkblue">"ಕುV"</span> berMw <span class="darkblue">"kuA"</span> bpfuMwu
+<br>1. <span class="darkblue">"मल्पुवॆ*"</span> berMw <span class="darkblue">"mlApuov"</span> bpfuMwu ebak <span class="darkblue">"मल्पुवे*"</span> berMw <span class="darkblue">"mlApuOv"</span> bpfuMwu.
+<br>2. <span class="darkblue">"ऎ*"</span> berMw <span class="darkblue">"oA"</span> bpfuMwu ebak <span class="darkblue">"ए*"</span> berMw <span class="darkblue">"OA"</span> bpfuMwu.<br>
+3. <span class="darkblue">"कु*"</span> berMw <span class="darkblue">"kuA"</span> bpfuMwu
 </p>
 
 </div>
