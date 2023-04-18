@@ -11,15 +11,15 @@ padding:0px;
 
 @font-face {
   font-family: tulu;
-  src: url(./fonts/brvu2.otf);
+  src: url(./media/fonts/brvu2.otf);
 }
 @font-face {
   font-family: tulu2;
-  src: url(./fonts/baravu.ttf);
+  src: url(./media/fonts/baravu.ttf);
 }
 @font-face {
   font-family: kan;
-  src: url(./fonts/kan.ttf);
+  src: url(./media/fonts/kan.ttf);
 }
 
 .kan{
