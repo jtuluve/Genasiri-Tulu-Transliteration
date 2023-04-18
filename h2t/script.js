@@ -1,5 +1,4 @@
-document.getElementById("txt").addEventListener("input", hinfunc);	
-/*Hindi to Tulu script converter*/
+
 function hinfunc(){
 //take input from user
 let txt = document.getElementById("txt").value; 

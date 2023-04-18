@@ -30,12 +30,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
  <title>Tulu Transcriptor - Genasiri</title>
  <meta name="description" content="genasiri transcriptor is created by Jai Tulunad ® organization. It converts other scripts into Tulu script.">
-  <link rel="icon" type="image/x-icon" href="./k2t/images/favicon.ico" />  
- <meta property="og:image" content="./k2t/images/jtlogo.png" />
+  <link rel="icon" type="image/x-icon" href="./media/images/favicon.ico" />  
+ <meta property="og:image" content="./media/images/jtlogo.png" />
  <meta name="keywords" content="genasiri, tulu tanscriptor, kannada to tulu script, malayalam to tulu script, tulu script converter">
  <meta name="author" content="Jnanesh">
- <meta name="og:image" content ="./k2t/images/jtlogo.png">
-    <link rel="stylesheet" href="./k2t/style.css" />
+ <meta name="og:image" content ="./media/images/jtlogo.png">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,6 +102,7 @@ If you need to change the text written in Kannada/Malayalam to Tulu, write in th
 <select name="fromlang" id="fromlang" style=" margin-top: 10px; font-size:90%;">
   <option value="kannada">Kannada</option>
   <option value="malayalam">Malayalam</option>
+  <option value="hindi">Hindi</option>
 </select>
 </label><br>
 <label>
@@ -146,16 +147,31 @@ viESx AAecAcaeraelnA&nbsp; gleser viESx AAecAcaerad eAduru "*" paewAl.
 2. <span class="darkblue">"ಎ*"  അല്ലെങ്കിൽ  "എ*"</span>  എന്നത് <span class="darkblue tulu">"oA"</span> എന്നും <span class="darkblue">"ಏ*"  അല്ലെങ്കിൽ "ഏ*"</span>  എന്നത് <span class="darkblue tulu">"OA"</span> എന്നും നൽകും.<br>
 3. <span class="darkblue">"ಕು*" അല്ലെങ്കിൽ "കു*"</span>  എന്നത് <span class="darkblue tulu">"kuA"</span> തിരികെ നൽകും.</p>
 </div>
-<p style="font-size:80%; margin-left: 3px;">If you find any error <a href="mailto:jtuluve@gmail.com" style="text-decoration: none;">email me</a></p>
+<p style="font-size:80%; margin-left: 3px;">If you find any error <a href="./errors.html" style="text-decoration: none;">report here</a></p>
 <footer style="font-size:50%;text-align:center;">VERSION: 1.0.0</footer>
 <div  style="position: fixed; right: 5px; bottom: 5px; text-align: right; align-items: right;">
 <a href="#" style="text-decoration:none;"><i class="bi bi-arrow-up-circle-fill" style="color: black;"></i></a>
 </div>
       <script src="./k2t/script.js"></script>
+      <script src="./m2t/script.js"></script>
+      <script src="./h2t/script.js"></script>
       
      <script>
-     			
-/*Description language changing function*/ document.getElementById("lang").addEventListener("change", lang);
+document.getElementById("txt").addEventListener("input", fromlang);	document.getElementById("fromlang").addEventListener("change", fromlang);
+    function fromlang(){
+     				let fromlang = document.getElementById("fromlang").value;
+    				if(fromlang == "kannada") {
+    						kanfunc();
+            }else if(fromlang=="malayalam"){
+    			    malfunc();
+    				}else{
+              hinfunc();
+            }
+    }
+
+
+/*Description language changing function*/ 
+document.getElementById("lang").addEventListener("change", lang);
 document.getElementById("fromlang").addEventListener("input", lang);
 function lang(){
 let lang = document.getElementById("lang").value;
