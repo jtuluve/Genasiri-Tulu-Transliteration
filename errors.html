@@ -1,139 +1,187 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <title>Reported Errors of converter</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Report Errors of converter</title>
+    <link rel="stylesheet" href="./css/error.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:image" content="./media/images/jtlogo.png" />
- <meta name="google-site-verification" content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw" />
+    <meta
+      name="google-site-verification"
+      content="NWlMuFy2u-b83Thy1eR0OxHVKHLIC6L8PPXZF3uorOw"
+    />
     <link rel="icon" type="image/x-icon" href="./media/images/favicon.ico" />
-  <script>
+    <script>
+      /* error page script */
 
-/* error page script */
+      function err1() {
+        document.getElementById("err1").style.display = "none";
+        document.getElementById("err2").style.display = "inline-block";
+        document.getElementById("err-form").style.display = "block";
+      }
+      function err2() {
+        document.getElementById("err1").style.display = "inline-block";
+        document.getElementById("err2").style.display = "none";
+        document.getElementById("err-form").style.display = "none";
+      }
+    </script>
 
-function err1(){
-document.getElementById("err1").style.display="none";
-document.getElementById("err2").style.display="inline-block";
-document.getElementById("err-form").style.display="block";
-}
-function err2(){
-document.getElementById("err1").style.display="inline-block";
-document.getElementById("err2").style.display="none";
-document.getElementById("err-form").style.display="none";
-}
-</script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: #dbdbdb">
+    <!-- loading -->
+    <div
+      class="loading"
+      style="
+        height: 110%;
+        width: 100%;
+        position: fixed;
+        background: black;
+        z-index: 10;
+        display: block;
+      "
+    >
+      <h3 style="color: white; top: 15px; position: relative">Loading...</h3>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loading").fadeOut("slow");
+      });
+    </script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-  <body style="background-color:#dbdbdb;">
-
-
-
-<!-- loading -->
-<div class="loading" style="height: 110%; width: 100%; position: fixed; background: black; z-index: 10; display: block;"><h3 style="color: white;top:15px;position:relative;">Loading...</h3></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script> 
-$(window).on("load",function(){ $(".loading").fadeOut("slow"); }); 
-</script>
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:white; position:relative;top:-10px;">
-<a class="navbar-brand" href="https://www.jaitulunad.com">
-<img src="./media/images/jtlogo.png" oncontextmenu="return false;" style="height: 60px; width: auto;">
-</a>
-<!--
-<img src="./media/images/k2tlogo.png" oncontextmenu="return false;" style="height: 60px; margin:-20px;">
--->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border:2px solid black;">
-    <span class="navbar-toggler-icon" style="font-size:70%;"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a style="color:gray;" class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="../">Transcripter</a>
-      </li>
-      <li class="nav-item">
-        <a style="color:gray;" class="nav-link" href="https://www.jaitulunad.com">Jai Tulunad</a>
-      </li>
-      <li class="nav-item">
-        <a style="color:black;" class="nav-link" href="./reports">Report Errors</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="err" style="background-color:maroon;width:100%;">
-<h3 style="color:white;">Errors</h3>
-<p style="color:white;">Errors found in the converter can be reported here. Reporting error helps us to improve  the converter. Please don't report the errors which are already reported. Please check reported errors before reporting new errors. </p>
-<div style="text-align:right;">
-<a class="err-btn" id="err1" onclick="err1()"><span>+report new error</span></a><br>
-</div>
-
-<div class="container" id="err-form" style="width:80%;display:none;">
-<div style="text-align:right;">
-<a class="err-btn2" id="err2" onclick="err2()" style="color:white;"><span>×cancel</span></a>
-</div>
-  <form action="https://formsubmit.co/aaf0fb049b489fba083d0dc0bfc8df43" method="POST" data-toggle="validator" style="width:90%;align:center;margin:auto;">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="./k2t/err-end">
-
-   <div class="row">
-      <div class="col-25">
-        <label for="name">Name:</label><br>
+    <div class="err">
+      <h3>Errors</h3>
+      <p>
+        Errors found in the converter can be reported here. Reporting error
+        helps us to improve the converter. Please don't report the errors which
+        are already reported. Please check reported errors before reporting new
+        errors.
+      </p>
+      <div style="text-align: right">
+        <a class="err-btn" id="err1" onclick="err1()"
+          ><span>report new error</span></a
+        ><br />
       </div>
-      <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <div class="container" id="err-form" style="width: 80%; display: none">
+        <div style="text-align: right">
+          <a class="err-btn2" id="err2" onclick="err2()"><span>cancel</span></a>
+        </div>
+        <form
+          action="https://formsubmit.co/aaf0fb049b489fba083d0dc0bfc8df43"
+          method="POST"
+          data-toggle="validator"
+          style="width: 90%; margin: auto"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="/err-end" />
+
+          <div class="row">
+            <div class="col-25"><label for="name">Name:</label><br /></div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Your email address:</label><br />
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="err-km">Converter in which you found the error:</label
+              ><br />
+            </div>
+            <br />
+            <div class="col-75">
+              <select id="err-km" name="found-in" required>
+                <option value="" disabled selected value></option>
+                <option value="k2t">Kannada to Tulu</option>
+                <option value="m2t">Malayalam to Tulu</option>
+                <option value="h2t">Hindi to Tulu</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="explain">Explain error with example:</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="explain"
+                name="explain"
+                placeholder="Explain with example.."
+                style="height: 200px"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="row" style="align-items: center">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
       </div>
     </div>
-   <div class="row">
-      <div class="col-25">
-        <label for="email">Your email address:</label><br>
-      </div>
-      <div class="col-75">
-        <input type="email" id="email" name="email" placeholder="Email address.." required>
-      </div>
+    <div
+      style="
+        height: 100vh;
+        background-color: #b2b2b2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <p
+        style="
+          color: #8b8b8b;
+          width: 70%;
+          position: absolute;
+          text-align: center;
+          font-weight: bold;
+        "
+      >
+        we are good to go..<br />No errors reported yet..🥳
+      </p>
     </div>
-     <div class="row">
-      <div class="col-25">
-        <label for="err-km">Converter in which you found the error:</label><br>
-      </div><br>
-      <div class="col-75">
-        <select id="err-km" name="found-in" required>
-          <option value="" disabled selected value></option>
-          <option value="k2t">Kannada to Tulu</option>
-          <option value="m2t">Malayalam to Tulu</option>
-          <option value="h2t">Hindi to Tulu</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="explain">Explain error with example:</label>
-      </div>
-      <div class="col-75">
-        <textarea id="explain" name="explain" placeholder="Explain with example.." style="height:200px" required></textarea>
-      </div>
-    </div>
-    <div class="row" style="align-items:center;">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
-
-</div>
-<div style="height:100vh; background-color:#b2b2b2;width:100%;display: flex;align-items: center; justify-content: center;">
-				<p style="color:#8b8b8b;width:70%; position:absolute; text-align:center;font-weight:bold;">we are good to go..<br>No errors reported yet..🥳</p>
-</div>
- 
-
-</body>
+  </body>
 </html>
