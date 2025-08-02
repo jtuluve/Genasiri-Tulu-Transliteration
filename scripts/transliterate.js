@@ -8,6 +8,7 @@ function k2t(txt, spcl) {
     .replace(/ಶ್ರೀ\*/g, "SArI")
     .replace(/ಶ್ರೀ/g, "SArXI")
     .replace(/ಓಂ\*/g, "FAamA")
+    .replace(/ಓಂ/g, "FAamXA")
     .replace(/್‍/g, "ä")
     .replace(/‍/g, "");
 
@@ -19,7 +20,7 @@ function k2t(txt, spcl) {
       .replace(/ು\*/g, "uAX")
       .replace(/ಉ\*/g, "XAuAX")
       .replace(/ೈ/g, "ೈ")
-      .replace(/ೊೖ/g, "ೖa");
+      .replace(/ೊೖ/g, "ೈa");
   }
 
   // Cluster pattern for diacritic repositioning
@@ -133,13 +134,22 @@ function m2t(txt, spcl) {
   txt = txt.replace(/്‍/g, "ä");
 
   // Step 2: Handle special Tulu characters
-  if(spcl){
+  if (spcl) {
     txt = txt.replace(/((?:.[്ä])*.)െ\*/g, "o$1");
     txt = txt.replace(/((?:.[്ä])*.)േ\*/g, "O$1");
-    txt = txt.replace(/എ\*/g, "oA").replace(/ഏ\*/g, "OA").replace(/ു\*/g, "uAX");
-    txt = txt.replace(/െൈ/g, "ൈ").replace(/ൊൈ/g, "ൈa");
+    txt = txt
+      .replace(/എ\*/g, "oA")
+      .replace(/ഏ\*/g, "OA")
+      .replace(/ു\*/g, "uAX");
   }
 
+  txt = txt
+    .replace(/െൈ/g, "ൈ")
+    .replace(/ൊൈ/g, "ൈa")
+    .replace(/ശ്രീ\*/g, "SArI")
+    .replace(/ശ്രീ/g, "SArXI")
+    .replace(/ഓം\*/g, "FAamA")
+    .replace(/ഓം/g, "FAamXA");
   // Step 3: Replace vowel signs
   txt = txt.replace(/((?:.[്ä])*.)െ/g, "e$1");
   txt = txt.replace(/((?:.[്ä])*.)േ/g, "E$1");
@@ -247,17 +257,24 @@ function m2t(txt, spcl) {
   // Step 7: Handle "fA" followed by consonants
   rep = rep.replace(/fA([kKgGZcCjJzqQwWNtTdDnpPbBmyrlvSxshL])/g, "fXA$1");
 
-  return rep.replace(/ee+/g,"ee");
+  return rep.replace(/ee+/g, "ee");
 }
 
 function h2t(txt, spcl) {
   txt = txt.replace(/्‍/g, "ä").replace(/‍/g, "");
-  if(spcl){
+  if (spcl) {
     txt = txt.replace(/((?:.[्ä])*.)े\*/g, "o$1");
-    txt = txt.replace(/ऎ\*/g, "oA").replace(/ए\*/g, "OA").replace(/ु\*/g, "uAX");
+    txt = txt
+      .replace(/ऎ\*/g, "oA")
+      .replace(/ए\*/g, "OA")
+      .replace(/ु\*/g, "uAX");
   }
 
   txt = txt
+    .replace(/श्री\*/g, "SArI")
+    .replace(/श्री/g, "SArXI")
+    .replace(/ओं\*/g, "FAamA")
+    .replace(/ओं/g, "FAamXA")
     .replace(/((?:.[्ä])*.)ॆ/g, "e$1")
     .replace(/((?:.[्ä])*.)े/g, "E$1")
     .replace(/((?:.[्ä])*.(?:[ािीुूेोौृ]?))ै/g, "ee$1")
