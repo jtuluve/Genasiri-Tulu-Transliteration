@@ -34,6 +34,7 @@ function kanfunc(){
 	//take input from user
 	let txt = document.getElementById("txt").value; 
 	
+	txt = txt.replace(/ಶ್ರೀ\*/g,"SArI").replace(/ಶ್ರೀ/g,"SArXI").replace(/ಓಂ\*/g,"FAamA")
 	/*To handle arka and ottakshara separately replace "್" containing zwj to ä */
 	txt = txt.replace(/್‍/g, "ä").replace(/‍/g, "");
 	
